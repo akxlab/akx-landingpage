@@ -1,0 +1,148 @@
+.v-main {
+  min-height: 100vh;
+}
+.v-theme--light {
+  .v-application {
+
+    background: hsla(0, 0%, 100%, 1) !important;
+
+    background: radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(187, 15%, 88%, 1) 100%) !important;
+
+    background: -moz-radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(187, 15%, 88%, 1) 100%) !important;
+
+    background: -webkit-radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(187, 15%, 88%, 0.5) 100%) !important;
+  }
+  .v-main {
+    background: hsla(0, 0%, 100%, 1);
+
+    background: radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(187, 15%, 88%, 1) 100%);
+
+    background: -moz-radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(187, 15%, 88%, 1) 100%);
+
+    background: -webkit-radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(187, 15%, 88%, 0.5) 100%);
+
+
+  }
+
+  .v-card .title {
+    color: rgba(0, 0, 0, 0.87);
+    font-size:2rem;
+  }
+
+  .v-card .title.white {
+    color: rgba(255,255,255,0.87);
+    font-family: $font-family-light;
+  }
+
+  h3.qltitle {
+    color: rgba(255,255,255,0.87) !important;
+    font-family: $font-family-light;
+    font-size: 1rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+    font-family: $font-family-bold;
+  }
+}
+
+h1.title {
+  color: rgba(255,255,255,0.87) !important;
+  font-family: $font-family-light;
+  font-size: 3rem;
+}
+
+h2.title {
+  color: rgba(255,255,255,0.87) !important;
+  font-family: $font-family-thin;
+  font-size: 2.2rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.page-wrapper {
+  padding: 30px;
+  max-width: 1300px;
+}
+
+$sizes: (
+  "display-1": 44px,
+  "display-2": 40px,
+  "display-3": 30px,
+  "h1": 36px,
+  "h2": 30px,
+  "h3": 21px,
+  "h4": 18px,
+  "h5": 16px,
+  "h6": 14px,
+  "text-10": 10px,
+  "text-13": 13px,
+  "text-18": 18px,
+  "text-20": 20px,
+  "text-24": 24px,
+  "body-text-1": 10px,
+);
+
+@each $pixel, $size in $sizes {
+  .#{$pixel} {
+    font-size: $size;
+    line-height: $size + 10;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+.feather-sm {
+  width: 20px;
+  height: 20px;
+  display: unset !important;
+}
+
+.customizer-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+}
+.fixed-width {
+  max-width: 1300px;
+}
+.h-100 {
+  height: 100%;
+}
+.w-100 {
+  width: 100%;
+}
+
+.h-100vh {
+  height: 100vh;
+}
+
+.gap-2 {
+  gap: 8px;
+}
+
+// border
+.border-right {
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+// app - ecommerce
+.ais-Pagination {
+  margin-top: 25px;
+  a {
+    text-decoration: none;
+    color: rgb(var(--v-theme-secondary));
+  }
+}
+

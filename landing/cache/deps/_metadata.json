@@ -1,0 +1,89 @@
+{
+  "hash": "656bd1a8",
+  "browserHash": "827aca7c",
+  "optimized": {
+    "vue": {
+      "src": "../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "1a14a308",
+      "needsInterop": false
+    },
+    "vue-router": {
+      "src": "../../node_modules/vue-router/dist/vue-router.mjs",
+      "file": "vue-router.js",
+      "fileHash": "cda70189",
+      "needsInterop": false
+    },
+    "pinia": {
+      "src": "../../node_modules/pinia/dist/pinia.mjs",
+      "file": "pinia.js",
+      "fileHash": "86e8e0b1",
+      "needsInterop": false
+    },
+    "@intlify/shared": {
+      "src": "../../node_modules/@intlify/shared/dist/shared.mjs",
+      "file": "@intlify_shared.js",
+      "fileHash": "6e5bbf3a",
+      "needsInterop": false
+    },
+    "vue-i18n": {
+      "src": "../../node_modules/vue-i18n/dist/vue-i18n.mjs",
+      "file": "vue-i18n.js",
+      "fileHash": "5955ea96",
+      "needsInterop": false
+    },
+    "vue-i18n-routing": {
+      "src": "../../node_modules/vue-i18n-routing/dist/vue-i18n-routing.mjs",
+      "file": "vue-i18n-routing.js",
+      "fileHash": "65cb9dc1",
+      "needsInterop": false
+    },
+    "js-cookie": {
+      "src": "../../node_modules/js-cookie/dist/js.cookie.mjs",
+      "file": "js-cookie.js",
+      "fileHash": "90548de4",
+      "needsInterop": false
+    },
+    "cookie-es": {
+      "src": "../../node_modules/cookie-es/dist/index.mjs",
+      "file": "cookie-es.js",
+      "fileHash": "e812a8c7",
+      "needsInterop": false
+    },
+    "ufo": {
+      "src": "../../node_modules/ufo/dist/index.mjs",
+      "file": "ufo.js",
+      "fileHash": "d8b3f701",
+      "needsInterop": false
+    },
+    "is-https": {
+      "src": "../../node_modules/is-https/dist/index.mjs",
+      "file": "is-https.js",
+      "fileHash": "72e32e21",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-XSIEZT6M": {
+      "file": "chunk-XSIEZT6M.js"
+    },
+    "chunk-TMSYC7QB": {
+      "file": "chunk-TMSYC7QB.js"
+    },
+    "chunk-3FR7EMUP": {
+      "file": "chunk-3FR7EMUP.js"
+    },
+    "chunk-WCHNXXWT": {
+      "file": "chunk-WCHNXXWT.js"
+    },
+    "chunk-JUYB7PGA": {
+      "file": "chunk-JUYB7PGA.js"
+    },
+    "chunk-BL5PFKSO": {
+      "file": "chunk-BL5PFKSO.js"
+    },
+    "chunk-HRVARA6P": {
+      "file": "chunk-HRVARA6P.js"
+    }
+  }
+}

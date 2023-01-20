@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxtjs/i18n": "^8.0.0-beta.7",
+    "nuxt": "^3.0.0"
+  },
+  "dependencies": {
+    "@esbuild-plugins/node-globals-polyfill": "^0.1.1",
+    "@esbuild-plugins/node-modules-polyfill": "^0.1.4",
+    "@pinia/nuxt": "^0.4.6",
+    "@vueuse/nuxt": "^9.11.0",
+    "js-cookie": "^3.0.1",
+    "nuxt-font-loader": "^2.2.2",
+    "pinia-plugin-persist": "^1.0.0",
+    "rollup-plugin-polyfill-node": "^0.11.0",
+    "sass": "^1.57.1",
+    "vite-plugin-vuetify": "^1.0.1",
+    "vue3-perfect-scrollbar": "^1.6.1",
+    "vuetify": "^3.1.2"
+  }
+}
