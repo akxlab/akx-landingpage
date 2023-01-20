@@ -8,6 +8,7 @@ import vuetify from 'vite-plugin-vuetify'
 export default defineNuxtConfig({
     telemetry: false,
     ssr: true,
+    target: 'static',
     app: {
         keepalive: true,
         baseURL: '/',

@@ -1,65 +1,65 @@
 {
-  "hash": "656bd1a8",
-  "browserHash": "827aca7c",
+  "hash": "87d79627",
+  "browserHash": "0eb6d3bd",
   "optimized": {
     "vue": {
       "src": "../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "1a14a308",
+      "fileHash": "39434410",
       "needsInterop": false
     },
     "vue-router": {
       "src": "../../node_modules/vue-router/dist/vue-router.mjs",
       "file": "vue-router.js",
-      "fileHash": "cda70189",
+      "fileHash": "a2594ab4",
       "needsInterop": false
     },
     "pinia": {
       "src": "../../node_modules/pinia/dist/pinia.mjs",
       "file": "pinia.js",
-      "fileHash": "86e8e0b1",
+      "fileHash": "f1fa2035",
       "needsInterop": false
     },
     "@intlify/shared": {
       "src": "../../node_modules/@intlify/shared/dist/shared.mjs",
       "file": "@intlify_shared.js",
-      "fileHash": "6e5bbf3a",
+      "fileHash": "18c06666",
       "needsInterop": false
     },
     "vue-i18n": {
       "src": "../../node_modules/vue-i18n/dist/vue-i18n.mjs",
       "file": "vue-i18n.js",
-      "fileHash": "5955ea96",
+      "fileHash": "14cc5e33",
       "needsInterop": false
     },
     "vue-i18n-routing": {
       "src": "../../node_modules/vue-i18n-routing/dist/vue-i18n-routing.mjs",
       "file": "vue-i18n-routing.js",
-      "fileHash": "65cb9dc1",
+      "fileHash": "47455542",
       "needsInterop": false
     },
     "js-cookie": {
       "src": "../../node_modules/js-cookie/dist/js.cookie.mjs",
       "file": "js-cookie.js",
-      "fileHash": "90548de4",
+      "fileHash": "7d7dcb85",
       "needsInterop": false
     },
     "cookie-es": {
       "src": "../../node_modules/cookie-es/dist/index.mjs",
       "file": "cookie-es.js",
-      "fileHash": "e812a8c7",
+      "fileHash": "e1d35a0f",
       "needsInterop": false
     },
     "ufo": {
       "src": "../../node_modules/ufo/dist/index.mjs",
       "file": "ufo.js",
-      "fileHash": "d8b3f701",
+      "fileHash": "236c96ae",
       "needsInterop": false
     },
     "is-https": {
       "src": "../../node_modules/is-https/dist/index.mjs",
       "file": "is-https.js",
-      "fileHash": "72e32e21",
+      "fileHash": "005e5ee0",
       "needsInterop": false
     }
   },
