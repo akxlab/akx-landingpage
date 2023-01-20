@@ -6,8 +6,20 @@
         "heroh1-2": "Crypto Quantum",
         "heroh1-3": "Identities",
         "cryptoquantumblurb": "We use crypto quantum technology. This means that crypto quantum will make it much harder for hackers to steal your money and make crypto transactions much more secure. It will change the crypto world by making it more trustworthy and less risky.",
-        "cryptoquantum-more": "Crypto quantum is a new technology that uses the principles of quantum mechanics to improve the security of cryptocurrency transactions. Just like how a traditional lock can be opened with a key, current encryption methods can be cracked by hackers using advanced computer algorithms. But with crypto quantum, it's like the lock is on a rollercoaster and the key is a secret code that is only known by the sender and the receiver. It's much harder for hackers to figure out the code because it's based on the strange properties of quantum physics."
-      }
+        "cryptoquantum-more": "Crypto quantum is a new technology that uses the principles of quantum mechanics to improve the security of cryptocurrency transactions. Just like how a traditional lock can be opened with a key, current encryption methods can be cracked by hackers using advanced computer algorithms. But with crypto quantum, it's like the lock is on a rollercoaster and the key is a secret code that is only known by the sender and the receiver. It's much harder for hackers to figure out the code because it's based on the strange properties of quantum physics.",
+        "section1-title": "AKX ID, ",
+        "section1-title2": "Infinite Asset Protection",
+        "section1-brand": "With a database containing over 7 million brands & trademarks, you probably are already protected by AKX without knowing it. Nobody can use your brand name but yourself. All you will have to do is claim it and start adding your precious assets to protect.",
+        "section1-id": "AKX ID began as an on-chain user identity solution to protect user information and content. It then evolved into a full fledged asset management & security product driven by state-of-the-art quantum and post quantum algorithms.",
+        "section1-auth": "If you own or plan to develop a new brand, especially in the luxury products market, you want to make sure your products are not cloned or tempered. Every year billions of dollars are lost because of counterfeit brand items. AKX ID is offering a simple yet efficient solution to counter that problem.",
+        "soon-txt": "Work in progress",
+        "section2-title": "Technology, ",
+        "section2-title2": "trustable & future-proof stack"
+
+      },
+  "common": {
+    "whitepaper_uri_txt": "download the white paper"
+  }
 
 
 }

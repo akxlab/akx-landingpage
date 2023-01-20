@@ -8,7 +8,7 @@ import vuetify from 'vite-plugin-vuetify'
 export default defineNuxtConfig({
     telemetry: false,
     ssr: true,
-    target: 'static',
+
     app: {
         keepalive: true,
         baseURL: '/',
@@ -49,7 +49,7 @@ export default defineNuxtConfig({
 
     css: ['~/assets/scss/style.scss', '~/assets/fa/css/all.css', '~/assets/fa/css/sharp-solid.css'],
     build: {
-        transpile: ['vuetify', "rxjs", "@ethersproject", 'ethers' ,'alchemy-sdk']
+        transpile: ['vuetify']
     },
     generate: {
         concurrency: 8
@@ -63,7 +63,7 @@ export default defineNuxtConfig({
 
         optimizeDeps: {
             include: ['bn.js', 'js-sha3', 'hash.js', 'aes-js', 'scrypt-js', 'bech32', 'crypto'],
-            exclude: ['vuetify', 'rxjs'],
+            exclude: ['vuetify'],
 
 
 
@@ -158,7 +158,7 @@ export default defineNuxtConfig({
             useCookie: false
         },
         langDir: 'i18n',
-        lazy: true,
+        lazy: false,
         vueI18n: {
             legacy: false,
             defaultLocale: 'english',

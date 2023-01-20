@@ -8,10 +8,10 @@ import {
   createI18n,
   useI18n,
   vTDirective
-} from "./chunk-3FR7EMUP.js";
+} from "./chunk-K5CU5EBC.js";
 import "./chunk-WCHNXXWT.js";
 import "./chunk-JUYB7PGA.js";
-import "./chunk-BL5PFKSO.js";
+import "./chunk-BU7L7KZO.js";
 import "./chunk-HRVARA6P.js";
 export {
   DatetimeFormat,

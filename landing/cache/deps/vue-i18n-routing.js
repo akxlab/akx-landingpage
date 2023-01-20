@@ -8,15 +8,15 @@ import {
 } from "./chunk-TMSYC7QB.js";
 import {
   useI18n
-} from "./chunk-3FR7EMUP.js";
+} from "./chunk-K5CU5EBC.js";
 import "./chunk-WCHNXXWT.js";
 import "./chunk-JUYB7PGA.js";
-import "./chunk-BL5PFKSO.js";
+import "./chunk-BU7L7KZO.js";
 import {
   __publicField
 } from "./chunk-HRVARA6P.js";
 
-// node_modules/@intlify/vue-router-bridge/lib/index.mjs
+// node_modules/@nuxtjs/i18n/node_modules/@intlify/vue-router-bridge/lib/index.mjs
 var isVueRouter4 = true;
 var VueRouterLegacy = class {
   static install() {
@@ -25,7 +25,7 @@ var VueRouterLegacy = class {
 __publicField(VueRouterLegacy, "version", "");
 var lib_default = VueRouterLegacy;
 
-// node_modules/vue-i18n-routing/dist/vue-i18n-routing.mjs
+// node_modules/@nuxtjs/i18n/node_modules/vue-i18n-routing/dist/vue-i18n-routing.mjs
 var STRATEGIES = {
   PREFIX: "prefix",
   PREFIX_EXCEPT_DEFAULT: "prefix_except_default",

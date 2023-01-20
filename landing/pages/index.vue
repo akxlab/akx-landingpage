@@ -14,6 +14,8 @@ const { t } = useI18n()
 <template>
   <v-container class="mt-12 pt-12">
     <HomeHero />
+    <HomeSection1 />
+    <HomeSection2 />
   </v-container>
 
 </template>

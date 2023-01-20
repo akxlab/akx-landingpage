@@ -1,65 +1,65 @@
 {
-  "hash": "87d79627",
-  "browserHash": "0eb6d3bd",
+  "hash": "981ac65a",
+  "browserHash": "0fba7bf3",
   "optimized": {
     "vue": {
       "src": "../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "39434410",
+      "fileHash": "b44175cc",
       "needsInterop": false
     },
     "vue-router": {
       "src": "../../node_modules/vue-router/dist/vue-router.mjs",
       "file": "vue-router.js",
-      "fileHash": "a2594ab4",
+      "fileHash": "0c59e8a1",
       "needsInterop": false
     },
     "pinia": {
       "src": "../../node_modules/pinia/dist/pinia.mjs",
       "file": "pinia.js",
-      "fileHash": "f1fa2035",
+      "fileHash": "9c3b5f9f",
       "needsInterop": false
     },
     "@intlify/shared": {
       "src": "../../node_modules/@intlify/shared/dist/shared.mjs",
       "file": "@intlify_shared.js",
-      "fileHash": "18c06666",
+      "fileHash": "47b0f2fe",
       "needsInterop": false
     },
     "vue-i18n": {
       "src": "../../node_modules/vue-i18n/dist/vue-i18n.mjs",
       "file": "vue-i18n.js",
-      "fileHash": "14cc5e33",
+      "fileHash": "69d37004",
       "needsInterop": false
     },
     "vue-i18n-routing": {
-      "src": "../../node_modules/vue-i18n-routing/dist/vue-i18n-routing.mjs",
+      "src": "../../node_modules/@nuxtjs/i18n/node_modules/vue-i18n-routing/dist/vue-i18n-routing.mjs",
       "file": "vue-i18n-routing.js",
-      "fileHash": "47455542",
+      "fileHash": "0917f599",
       "needsInterop": false
     },
     "js-cookie": {
       "src": "../../node_modules/js-cookie/dist/js.cookie.mjs",
       "file": "js-cookie.js",
-      "fileHash": "7d7dcb85",
+      "fileHash": "21452ed5",
       "needsInterop": false
     },
     "cookie-es": {
       "src": "../../node_modules/cookie-es/dist/index.mjs",
       "file": "cookie-es.js",
-      "fileHash": "e1d35a0f",
+      "fileHash": "4a061de1",
       "needsInterop": false
     },
     "ufo": {
       "src": "../../node_modules/ufo/dist/index.mjs",
       "file": "ufo.js",
-      "fileHash": "236c96ae",
+      "fileHash": "78166675",
       "needsInterop": false
     },
     "is-https": {
       "src": "../../node_modules/is-https/dist/index.mjs",
       "file": "is-https.js",
-      "fileHash": "005e5ee0",
+      "fileHash": "62906cfe",
       "needsInterop": false
     }
   },
@@ -70,8 +70,8 @@
     "chunk-TMSYC7QB": {
       "file": "chunk-TMSYC7QB.js"
     },
-    "chunk-3FR7EMUP": {
-      "file": "chunk-3FR7EMUP.js"
+    "chunk-K5CU5EBC": {
+      "file": "chunk-K5CU5EBC.js"
     },
     "chunk-WCHNXXWT": {
       "file": "chunk-WCHNXXWT.js"
@@ -79,8 +79,8 @@
     "chunk-JUYB7PGA": {
       "file": "chunk-JUYB7PGA.js"
     },
-    "chunk-BL5PFKSO": {
-      "file": "chunk-BL5PFKSO.js"
+    "chunk-BU7L7KZO": {
+      "file": "chunk-BU7L7KZO.js"
     },
     "chunk-HRVARA6P": {
       "file": "chunk-HRVARA6P.js"

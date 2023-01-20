@@ -43,9 +43,9 @@ import {
   measure,
   toDisplayString,
   warn
-} from "./chunk-BL5PFKSO.js";
+} from "./chunk-BU7L7KZO.js";
 
-// node_modules/@intlify/core-base/node_modules/@intlify/message-compiler/dist/message-compiler.mjs
+// node_modules/@intlify/message-compiler/dist/message-compiler.mjs
 var CompileErrorCodes = {
   EXPECTED_TOKEN: 1,
   INVALID_TOKEN_IN_PLACEHOLDER: 2,
@@ -4634,4 +4634,4 @@ export {
   * (c) 2023 kazuya kawaguchi
   * Released under the MIT License.
   */
-//# sourceMappingURL=chunk-3FR7EMUP.js.map
+//# sourceMappingURL=chunk-K5CU5EBC.js.map

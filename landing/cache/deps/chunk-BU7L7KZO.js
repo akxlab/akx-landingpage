@@ -5,9 +5,7 @@ var measure;
 if (true) {
   const perf = inBrowser && window.performance;
   if (perf && perf.mark && perf.measure && perf.clearMarks && perf.clearMeasures) {
-    mark = (tag) => {
-      perf.mark(tag);
-    };
+    mark = (tag) => perf.mark(tag);
     measure = (name, startTag, endTag) => {
       perf.measure(name, startTag, endTag);
       perf.clearMarks(startTag);
@@ -27,7 +25,8 @@ function format(message, ...args) {
     return args.hasOwnProperty(identifier) ? args[identifier] : "";
   });
 }
-var makeSymbol = (name, shareable = false) => !shareable ? Symbol(name) : Symbol.for(name);
+var hasSymbol = typeof Symbol === "function" && typeof Symbol.toStringTag === "symbol";
+var makeSymbol = (name) => hasSymbol ? Symbol(name) : name;
 var generateFormatCacheKey = (locale, key, source) => friendlyJSONstringify({ l: locale, k: key, s: source });
 var friendlyJSONstringify = (json) => JSON.stringify(json).replace(/\u2028/g, "\\u2028").replace(/\u2029/g, "\\u2029").replace(/\u0027/g, "\\u0027");
 var isNumber = (val) => typeof val === "number" && isFinite(val);
@@ -157,8 +156,8 @@ export {
   createEmitter
 };
 /*!
-  * shared v9.3.0-beta.14
-  * (c) 2023 kazuya kawaguchi
+  * shared v9.3.0-beta.10
+  * (c) 2022 kazuya kawaguchi
   * Released under the MIT License.
   */
-//# sourceMappingURL=chunk-BL5PFKSO.js.map
+//# sourceMappingURL=chunk-BU7L7KZO.js.map
