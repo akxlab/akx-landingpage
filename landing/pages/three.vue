@@ -2,12 +2,12 @@
 
 </script>
 <style lang="scss" scoped>
-.canvasHolder,
-.canvas {
-  position: absolute;
+.canvasHolder
+ {
+  position: relative;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 300px;
   height: 100%;
   pointer-events: all;
   z-index: 1;
@@ -16,6 +16,6 @@
 
 <template>
   <div ref="canvasHolder" class="canvasHolder">
-    <ThreeCanvas />
+    <ThreeCanvas style="position:absolute;top:0;left:10%;margin:0 auto;width:100%;" />
   </div>
 </template>
