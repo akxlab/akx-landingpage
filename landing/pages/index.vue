@@ -12,7 +12,7 @@ const { t } = useI18n()
 
 </script>
 <template>
-  <v-container class="mt-12 pt-12">
+  <v-container class="mt-12 pt-12" style="max-width:1600px;">
     <HomeHero />
     <HomeSection1 />
     <HomeSection2 />

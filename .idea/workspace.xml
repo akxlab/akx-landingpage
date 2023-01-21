@@ -4,9 +4,7 @@
     <list default="true" id="eee07431-0dc3-4e16-ac64-d34aa0e286a2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landing/components/home/Hero.vue" beforeDir="false" afterPath="$PROJECT_DIR$/landing/components/home/Hero.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/components/home/Section1.vue" beforeDir="false" afterPath="$PROJECT_DIR$/landing/components/home/Section1.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/components/home/Section2.vue" beforeDir="false" afterPath="$PROJECT_DIR$/landing/components/home/Section2.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/i18n/en-US.json" beforeDir="false" afterPath="$PROJECT_DIR$/landing/i18n/en-US.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/landing/pages/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +59,7 @@
       <updated>1674152619105</updated>
       <workItem from="1674152620316" duration="3651000" />
       <workItem from="1674158032247" duration="14683000" />
-      <workItem from="1674217233713" duration="29979000" />
+      <workItem from="1674217233713" duration="30287000" />
     </task>
     <servers />
   </component>

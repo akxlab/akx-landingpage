@@ -9,7 +9,7 @@ const { t } = useI18n()
 </script>
 <template>
 
-  <v-card max-width="1900" class="ml-auto mr-auto pa-12" style="margin-top:80px;" color="transparent">
+  <v-card max-width="1900" width="100%" class="ml-auto mr-auto pa-12" style="margin-top:80px;" color="transparent">
     <v-row>
       <v-col cols="12" lg="5">
         <h1 class="hero-h1">
