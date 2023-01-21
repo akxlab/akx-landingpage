@@ -1,5 +1,5 @@
 <template>
-	<canvas id="canvas" ref="canvas" class=" top-0 left-0 left-1  w-full z-1"></canvas>
+	<canvas id="canvas" ref="canvas"  ></canvas>
 </template>
 
 <script setup lang="ts">

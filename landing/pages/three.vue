@@ -5,10 +5,9 @@
 .canvasHolder
  {
   position: relative;
-  top: 0;
-  left: 0;
-  width: 300px;
-  height: 100%;
+overflow:hidden;
+  width: 50vw;
+  height: 100vh;
   pointer-events: all;
   z-index: 1;
 }
@@ -16,6 +15,6 @@
 
 <template>
   <div ref="canvasHolder" class="canvasHolder">
-    <ThreeCanvas style="position:absolute;top:0;left:10%;margin:0 auto;width:100%;" />
+    <ThreeCanvas  />
   </div>
 </template>

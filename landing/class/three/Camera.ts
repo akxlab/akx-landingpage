@@ -18,8 +18,8 @@ class Camera extends WebGLSub {
 	}
 
 	setInstance() {
-		this.instance = new THREE.PerspectiveCamera(35, WebGL.sizes.width / WebGL.sizes.height, 1, 1000)
-		this.instance.position.set(6, 4, 8)
+		this.instance = new THREE.PerspectiveCamera(30, WebGL.sizes.width / WebGL.sizes.height, 1, 1000)
+		this.instance.position.set(4, 0, 1.2)
 		WebGL.scene.add(this.instance)
 	}
 
@@ -33,7 +33,7 @@ class Camera extends WebGLSub {
 	}
 
 	onResize() {
-		this.instance!.aspect = WebGL.sizes.width * WebGL.sizes.height / 0.5
+		this.instance!.aspect = WebGL.sizes.width * WebGL.sizes.height;
 		this.instance!.updateProjectionMatrix()
 	}
 
