@@ -99,7 +99,7 @@ const { t } = useI18n()
   text-align:center;
   margin-right:-180px;
 
-  -webkit-mask-image: radial-gradient(ellipse 60% 90% at 28% 78%, rgb(94, 167, 227) 20%, transparent 70%);
+  -webkit-mask-image: radial-gradient(ellipse 60% 90% at 28% 78%, rgb(94, 167, 227) 20%, transparent 90%);
   /*  mask-image: radial-gradient(ellipse 90% 80% at 48% 78%, black 40%, transparent 50%);
     right:-50px;*/
 

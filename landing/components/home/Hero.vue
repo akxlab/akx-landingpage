@@ -9,7 +9,7 @@ const { t } = useI18n()
 </script>
 <template>
 
-  <v-card max-width="1400" class="ml-auto mr-auto pa-12" style="margin-top:80px;" color="transparent">
+  <v-card max-width="1900" class="ml-auto mr-auto pa-12" style="margin-top:80px;" color="transparent">
     <v-row>
       <v-col cols="12" lg="5">
         <h1 class="hero-h1">
@@ -21,7 +21,7 @@ const { t } = useI18n()
          {{t('home.cryptoquantumblurb')}}
                  </p>
       </v-col>
-      <v-col cols="12" lg="7" align="right" >
+      <v-col cols="12" lg="7" align="right" class="atom-gradient">
 
        <!-- <v-icon size="400" color="#05b187" >fa-duotone fa-atom-simple</v-icon>-->
            <div ref="canvasHolder" class="canvasHolder">
@@ -81,8 +81,8 @@ display:block;
     line-height: 4.6rem;
   }
 
-  .hero-text {
-    font-size:1.2rem;
+  p.hero-text {
+    font-size:1.5rem;
     line-height:2rem;
   }
 
