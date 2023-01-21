@@ -1,69 +1,114 @@
 {
-  "hash": "981ac65a",
-  "browserHash": "0fba7bf3",
+  "hash": "38278639",
+  "browserHash": "4d0d9673",
   "optimized": {
     "vue": {
       "src": "../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "b44175cc",
+      "fileHash": "3321fd7b",
+      "needsInterop": false
+    },
+    "troisjs": {
+      "src": "../../node_modules/troisjs/build/trois.module.js",
+      "file": "troisjs.js",
+      "fileHash": "4c5e0695",
       "needsInterop": false
     },
     "vue-router": {
       "src": "../../node_modules/vue-router/dist/vue-router.mjs",
       "file": "vue-router.js",
-      "fileHash": "0c59e8a1",
+      "fileHash": "49ea1afd",
       "needsInterop": false
     },
     "pinia": {
       "src": "../../node_modules/pinia/dist/pinia.mjs",
       "file": "pinia.js",
-      "fileHash": "9c3b5f9f",
+      "fileHash": "aff1a308",
       "needsInterop": false
     },
     "@intlify/shared": {
       "src": "../../node_modules/@intlify/shared/dist/shared.mjs",
       "file": "@intlify_shared.js",
-      "fileHash": "47b0f2fe",
+      "fileHash": "3391fc53",
       "needsInterop": false
     },
     "vue-i18n": {
       "src": "../../node_modules/vue-i18n/dist/vue-i18n.mjs",
       "file": "vue-i18n.js",
-      "fileHash": "69d37004",
+      "fileHash": "8ad3c925",
       "needsInterop": false
     },
     "vue-i18n-routing": {
       "src": "../../node_modules/@nuxtjs/i18n/node_modules/vue-i18n-routing/dist/vue-i18n-routing.mjs",
       "file": "vue-i18n-routing.js",
-      "fileHash": "0917f599",
+      "fileHash": "7344ac96",
       "needsInterop": false
     },
     "js-cookie": {
       "src": "../../node_modules/js-cookie/dist/js.cookie.mjs",
       "file": "js-cookie.js",
-      "fileHash": "21452ed5",
+      "fileHash": "696c0342",
       "needsInterop": false
     },
     "cookie-es": {
       "src": "../../node_modules/cookie-es/dist/index.mjs",
       "file": "cookie-es.js",
-      "fileHash": "4a061de1",
+      "fileHash": "e8481048",
       "needsInterop": false
     },
     "ufo": {
       "src": "../../node_modules/ufo/dist/index.mjs",
       "file": "ufo.js",
-      "fileHash": "78166675",
+      "fileHash": "065d8759",
       "needsInterop": false
     },
     "is-https": {
       "src": "../../node_modules/is-https/dist/index.mjs",
       "file": "is-https.js",
-      "fileHash": "62906cfe",
+      "fileHash": "18cc6467",
+      "needsInterop": false
+    },
+    "three": {
+      "src": "../../node_modules/three/build/three.module.js",
+      "file": "three.js",
+      "fileHash": "ed59039e",
+      "needsInterop": false
+    },
+    "gsap": {
+      "src": "../../node_modules/gsap/index.js",
+      "file": "gsap.js",
+      "fileHash": "dc3757fc",
+      "needsInterop": false
+    },
+    "three/examples/jsm/loaders/GLTFLoader.js": {
+      "src": "../../node_modules/three/examples/jsm/loaders/GLTFLoader.js",
+      "file": "three_examples_jsm_loaders_GLTFLoader__js.js",
+      "fileHash": "ee2ee007",
+      "needsInterop": false
+    },
+    "three/examples/jsm/controls/OrbitControls": {
+      "src": "../../node_modules/three/examples/jsm/controls/OrbitControls.js",
+      "file": "three_examples_jsm_controls_OrbitControls.js",
+      "fileHash": "b4ab81e6",
+      "needsInterop": false
+    },
+    "lil-gui": {
+      "src": "../../node_modules/lil-gui/dist/lil-gui.esm.js",
+      "file": "lil-gui.js",
+      "fileHash": "9e500696",
+      "needsInterop": false
+    },
+    "three/examples/jsm/libs/stats.module.js": {
+      "src": "../../node_modules/three/examples/jsm/libs/stats.module.js",
+      "file": "three_examples_jsm_libs_stats__module__js.js",
+      "fileHash": "dc234177",
       "needsInterop": false
     }
   },
   "chunks": {
+    "chunk-O66LVNQA": {
+      "file": "chunk-O66LVNQA.js"
+    },
     "chunk-XSIEZT6M": {
       "file": "chunk-XSIEZT6M.js"
     },

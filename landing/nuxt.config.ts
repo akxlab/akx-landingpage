@@ -3,6 +3,7 @@ import {NodeGlobalsPolyfillPlugin} from '@esbuild-plugins/node-globals-polyfill'
 import {NodeModulesPolyfillPlugin} from '@esbuild-plugins/node-modules-polyfill'
 import nodePolyfills from 'rollup-plugin-polyfill-node';
 import vuetify from 'vite-plugin-vuetify'
+import glsl from 'vite-plugin-glsl'
 
 // @ts-ignore
 export default defineNuxtConfig({
@@ -49,7 +50,7 @@ export default defineNuxtConfig({
 
     css: ['~/assets/scss/style.scss', '~/assets/fa/css/all.css', '~/assets/fa/css/sharp-solid.css'],
     build: {
-        transpile: ['vuetify']
+        transpile: ['vuetify', 'troisjs']
     },
     generate: {
         concurrency: 8
@@ -62,7 +63,7 @@ export default defineNuxtConfig({
 
 
         optimizeDeps: {
-            include: ['bn.js', 'js-sha3', 'hash.js', 'aes-js', 'scrypt-js', 'bech32', 'crypto'],
+            include: ['bn.js', 'js-sha3', 'hash.js', 'aes-js', 'scrypt-js', 'bech32', 'crypto','troisjs'],
             exclude: ['vuetify'],
 
 
@@ -104,7 +105,8 @@ export default defineNuxtConfig({
         },
         experimental: {
             hmrPartialAccept: true,
-        }
+        },
+        plugins: [glsl()]
 
 
     },

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["external:troisjs"],
+  "sourcesContent": ["export * from \"troisjs\""],
+  "mappings": ";AAAA,cAAc;",
+  "names": []
+}
