@@ -2,69 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eee07431-0dc3-4e16-ac64-d34aa0e286a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/landing/class/three/Camera.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/class/three/Debug.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/class/three/Layers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/class/three/Mouse.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/class/three/Raycaster.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/class/three/Renderer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/class/three/Time.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/class/three/WebGL.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/class/three/WebGLSub.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/class/three/World/Cube.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/class/three/World/Environment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/class/three/World/Floor.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/class/three/World/Fox.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/class/three/World/Guardian.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/class/three/World/World.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/class/three/shaders/cube/fragment.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/class/three/shaders/cube/vertex.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/class/three/utils/Resources.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/class/three/utils/Sizes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/class/ui/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/components/three/Canvas.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/constants/ENTITIES.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/constants/SOURCES.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/pages/three.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/draco/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/draco/draco_decoder.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/draco/draco_decoder.wasm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/draco/draco_encoder.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/draco/draco_wasm_wrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/draco/gltf/draco_decoder.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/draco/gltf/draco_decoder.wasm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/draco/gltf/draco_encoder.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/draco/gltf/draco_wasm_wrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/models/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/models/Fox/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/models/Fox/glTF-Binary/Fox.glb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/models/Fox/glTF-Embedded/Fox.gltf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/models/Fox/glTF/Fox.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/models/Fox/glTF/Fox.gltf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/models/Fox/glTF/Texture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian/license.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian/scene.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian/scene.gltf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian/textures/blinn1_baseColor.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian/textures/blinn1_emissive.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian/textures/blinn1_metallicRoughness.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian/textures/blinn1_normal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/textures/dirt/color.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/textures/dirt/normal.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/textures/environmentMap/nx.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/textures/environmentMap/ny.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/textures/environmentMap/nz.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/textures/environmentMap/px.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/textures/environmentMap/py.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/textures/environmentMap/pz.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/types/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/vue-shim.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/cache/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/_metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/components/home/Section2.vue" beforeDir="false" afterPath="$PROJECT_DIR$/landing/components/home/Section2.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/landing/nuxt.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/landing/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/landing/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/class/three/World/Guardian.ts" beforeDir="false" afterPath="$PROJECT_DIR$/landing/class/three/World/Guardian.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/components/home/Hero.vue" beforeDir="false" afterPath="$PROJECT_DIR$/landing/components/home/Hero.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +59,7 @@
       <updated>1674152619105</updated>
       <workItem from="1674152620316" duration="3651000" />
       <workItem from="1674158032247" duration="14683000" />
-      <workItem from="1674217233713" duration="18928000" />
+      <workItem from="1674217233713" duration="21736000" />
     </task>
     <servers />
   </component>

@@ -11,6 +11,7 @@ class Guardian extends WebGLSub {
 	resource: GLTF
 	model!: THREE.Object3D
 	animation!: { [key: string]: any }
+	deltaTime = 0.1;
 
 	constructor() {
 		super()
@@ -27,7 +28,9 @@ class Guardian extends WebGLSub {
 
 	setModel() {
 		this.model = this.resource.scene
-		this.model.scale.set(1, 1, 1)
+		this.model.scale.set(0.75, 0.75, 0.75)
+		this.model.position.setX(-1.5);
+		this.model.position.setY(0.95);
 		this.model.name = EntitiesName.GUARDIAN
 		WebGL.scene.add(this.model)
 
@@ -93,7 +96,14 @@ class Guardian extends WebGLSub {
 
 	update(deltaTime: number) {
 	//	this.animation.mixer.update(deltaTime * 0.001)
-		this.model.rotation.y += deltaTime * 0.0001
+		this.model.rotation.y += this.deltaTime;
+		console.log(this.model.rotation.y);
+		if(this.model.rotation.y > 0.4) {
+			this.deltaTime = -0.001
+		}
+		if(this.model.rotation.y < -0.4) {
+			this.deltaTime = 0.001
+		}
 	}
 }
 
