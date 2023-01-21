@@ -33,7 +33,7 @@ class Camera extends WebGLSub {
 	}
 
 	onResize() {
-		this.instance!.aspect = WebGL.sizes.width / WebGL.sizes.height
+		this.instance!.aspect = WebGL.sizes.width * WebGL.sizes.height / 0.5
 		this.instance!.updateProjectionMatrix()
 	}
 

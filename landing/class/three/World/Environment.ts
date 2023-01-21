@@ -12,7 +12,7 @@ class Environment extends WebGLSub {
 		super()
 
 		// Debug
-		if (WebGL.debug.active) this.debugFolder = WebGL.debug.addFolder('environment')
+		//if (WebGL.debug.active) this.debugFolder = WebGL.debug.addFolder('environment')
 
 		this.setSunLight()
 		this.setEnvironmentMap()

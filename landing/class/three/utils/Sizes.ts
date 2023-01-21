@@ -9,8 +9,8 @@ class Sizes extends THREE.EventDispatcher {
 	constructor() {
 		super()
 
-		this.width = window.innerWidth
-		this.height = window.innerHeight
+		this.width = window.innerWidth;
+		this.height = window.innerHeight;
 		this.pixelRatio = Math.min(window.devicePixelRatio, 2)
 		this.aspect = this.width / this.height
 
@@ -19,8 +19,8 @@ class Sizes extends THREE.EventDispatcher {
 
 	setEvents = () => {
 		window.addEventListener('resize', () => {
-			this.width = window.innerWidth
-			this.height = window.innerHeight
+			this.width = window.innerWidth;
+			this.height = window.innerHeight;
 			this.pixelRatio = Math.min(window.devicePixelRatio, 2)
 			this.aspect = this.width / this.height
 
