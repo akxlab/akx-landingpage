@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="eee07431-0dc3-4e16-ac64-d34aa0e286a2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/class/three/Camera.ts" beforeDir="false" afterPath="$PROJECT_DIR$/landing/class/three/Camera.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landing/class/three/Renderer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/landing/class/three/Renderer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/class/three/World/Environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/landing/class/three/World/Environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/class/three/WebGL.ts" beforeDir="false" afterPath="$PROJECT_DIR$/landing/class/three/WebGL.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landing/class/three/World/Guardian.ts" beforeDir="false" afterPath="$PROJECT_DIR$/landing/class/three/World/Guardian.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +61,7 @@
       <workItem from="1674152620316" duration="3651000" />
       <workItem from="1674158032247" duration="14683000" />
       <workItem from="1674217233713" duration="33055000" />
-      <workItem from="1674575294863" duration="8072000" />
+      <workItem from="1674575294863" duration="9429000" />
     </task>
     <servers />
   </component>

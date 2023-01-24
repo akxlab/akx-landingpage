@@ -41,7 +41,7 @@ class WebGL {
 
 		// Listeners
 		this.sizes.addEventListener('resize', this.resize)
-		this.mouse.addEventListener('mousemove', this.mouseMove)
+		//this.mouse.addEventListener('mousemove', this.mouseMove)
 
 		// Update
 		this.time.addUpdate(this.update)
@@ -57,7 +57,7 @@ class WebGL {
 
 	mouseMove = (e) => {
 		// To do on mousemove
-		this.raycaster.onMouseMove()
+		//this.raycaster.onMouseMove()
 	}
 
 	update = () => {
