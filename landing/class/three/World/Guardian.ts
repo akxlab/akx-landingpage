@@ -35,12 +35,12 @@ class Guardian extends WebGLSub {
 		this.model.receiveShadow = true;
 		WebGL.scene.add(this.model)
 
-		this.model.traverse((child) => {
+		/*this.model.traverse((child) => {
 			if (child instanceof THREE.Mesh) {
 				child.castShadow = true
 				// child.layers.set(EntitiesLayer[EntitiesName.FOX])
 			}
-		})
+		})*/
 	}
 
 	setAnimation() {
@@ -71,12 +71,6 @@ class Guardian extends WebGLSub {
 			this.animation.actions.current = newAction
 		}
 
-		// Debug
-		if (WebGL.debug.active) {
-			this.debugFolder!.add(this.debugParams().animations, 'playIdle')
-		//	this.debugFolder!.add(this.debugParams().animations, 'playWalking')
-		//	this.debugFolder!.add(this.debugParams().animations, 'playRunning')
-		}
 	}
 
 	debugParams() {
@@ -96,7 +90,7 @@ class Guardian extends WebGLSub {
 	}
 
 	update(deltaTime: number) {
-		this.animation.mixer.update(deltaTime * 0.001)
+		this.animation.mixer.update(deltaTime * 0.0008)
 
 
 		/*this.model.rotation.y += this.deltaTime;

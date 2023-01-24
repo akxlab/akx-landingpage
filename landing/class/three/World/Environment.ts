@@ -24,18 +24,12 @@ class Environment extends WebGLSub {
 		this.sunLight = new THREE.DirectionalLight('#ffffff', 15)
 		this.sunLight.castShadow = true
 		this.sunLight.shadow.camera.far = -5
-		this.sunLight.shadow.mapSize.set(2048, 2048)
+		this.sunLight.shadow.mapSize.set(512,512)
 		this.sunLight.shadow.normalBias = 0.05
 		this.sunLight.position.set(13.5, 5, 5.25)
 		WebGL.scene.add(this.sunLight)
 
-		// Debug
-		if (WebGL.debug.active) {
-			this.debugFolder!.add(this.sunLight, 'intensity').name('sunLightIntensity').min(12).max(20).step(0.001)
-			this.debugFolder!.add(this.sunLight.position, 'x').name('sunLightX').min(5).max(13.5).step(0.001)
-			this.debugFolder!.add(this.sunLight.position, 'y').name('sunLightY').min(-5).max(5).step(0.001)
-			this.debugFolder!.add(this.sunLight.position, 'z').name('sunLightZ').min(-5).max(15).step(0.001)
-		}
+
 	}
 
 	setEnvironmentMap() {
@@ -56,16 +50,7 @@ class Environment extends WebGLSub {
 		}
 		this.environmentMap.updateMaterials()
 
-		// Debug
-		if (WebGL.debug.active) {
-			this.debugFolder
-				.add(this.environmentMap, 'intensity')
-				.name('envMapIntensity')
-				.min(0)
-				.max(10)
-				.step(0.01)
-				.onChange(this.environmentMap.updateMaterials)
-		}
+
 	}
 }
 

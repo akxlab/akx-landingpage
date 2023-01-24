@@ -29,8 +29,8 @@ class Camera extends WebGLSub {
 
 	setControls() {
 		this.controls = new OrbitControls(this.instance!, WebGL.canvas)
-		this.controls.enableDamping = true
-		this.controls.enabled = true;
+		this.controls.enableDamping = false;
+		this.controls.enabled = false;
 	}
 
 	onResize() {

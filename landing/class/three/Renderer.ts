@@ -20,7 +20,7 @@ class Renderer extends WebGLSub {
 		super()
 
 		this.setInstance()
-		this.setPost()
+	//	this.setPost()
 	}
 
 	setInstance() {
@@ -34,7 +34,7 @@ class Renderer extends WebGLSub {
 		this.instance.physicallyCorrectLights = true
 		this.instance.outputEncoding = THREE.sRGBEncoding
 		this.instance.toneMapping = THREE.ACESFilmicToneMapping
-		this.instance.toneMappingExposure = 1;
+		this.instance.toneMappingExposure = 1.5;
 		this.instance.shadowMap.enabled = true
 		this.instance.shadowMap.type = THREE.PCFSoftShadowMap
 		this.instance.setClearColor(0x111111, 1)
@@ -55,7 +55,7 @@ class Renderer extends WebGLSub {
 		this.renderPass.clearColor = new THREE.Color( 0, 0, 0 );
 		this.renderPass.clearAlpha = 0;
 		this.instance!.render(WebGL.scene, WebGL.camera.instance!);
-		let fxaaPass = new ShaderPass( FXAAShader );
+		/*let fxaaPass = new ShaderPass( FXAAShader );
 		const copyPass = new ShaderPass( CopyShader );
 		// @ts-ignore
 		let composer =  new EffectComposer( this.instance );
@@ -70,7 +70,7 @@ class Renderer extends WebGLSub {
 		// @ts-ignore
 		const composer2 = new EffectComposer( this.instance );
 		composer2.addPass( this.renderPass );
-		composer2.addPass( fxaaPass );
+		composer2.addPass( fxaaPass );*/
 
 	}
 
