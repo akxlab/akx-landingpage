@@ -9,7 +9,7 @@ class Layers extends WebGLSub {
 	constructor() {
 		super()
 
-		// this.updateLayers([EntitiesLayer.DEFAULT, EntitiesLayer.FOX, EntitiesLayer.CUBE])
+		 this.updateLayers([EntitiesLayer.DEFAULT, EntitiesLayer.GUARDIAN])
 	}
 
 	async updateLayers(layers: EntitiesLayer[]) {

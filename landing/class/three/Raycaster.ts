@@ -7,7 +7,7 @@ import { EntitiesLayer } from '@/constants/ENTITIES'
 
 class Raycaster extends WebGLSub {
 	instance: THREE.Raycaster = new THREE.Raycaster()
-	pointer: THREE.Vector2 = new THREE.Vector2(-10, -10)
+	pointer: THREE.Vector2 = new THREE.Vector2(-10, -20)
 
 	constructor() {
 		super()

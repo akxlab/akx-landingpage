@@ -3,6 +3,7 @@ import * as THREE from 'three'
 import WebGL from '@/class/three/WebGL'
 import WebGLSub from '@/class/three/WebGLSub'
 
+
 class Environment extends WebGLSub {
 	debugFolder!: { [key: string]: any }
 	sunLight!: THREE.DirectionalLight
@@ -16,15 +17,16 @@ class Environment extends WebGLSub {
 
 		this.setSunLight()
 		this.setEnvironmentMap()
+
 	}
 
 	setSunLight() {
-		this.sunLight = new THREE.DirectionalLight('#ffffff', 4)
+		this.sunLight = new THREE.DirectionalLight('#ffffff', 5)
 		this.sunLight.castShadow = true
 		this.sunLight.shadow.camera.far = 15
 		this.sunLight.shadow.mapSize.set(1024, 1024)
-		this.sunLight.shadow.normalBias = 0.05
-		this.sunLight.position.set(3.5, 2, -1.25)
+		this.sunLight.shadow.normalBias = 0.5
+		this.sunLight.position.set(13.5, 5, 5.25)
 		WebGL.scene.add(this.sunLight)
 
 		// Debug
@@ -37,7 +39,7 @@ class Environment extends WebGLSub {
 	}
 
 	setEnvironmentMap() {
-		this.environmentMap.intensity = 0.4
+		this.environmentMap.intensity = 0.5
 		this.environmentMap.texture = WebGL.resources.itemsLoaded['environmentMapTexture']
 		this.environmentMap.texture.encoding = THREE.sRGBEncoding
 
@@ -60,8 +62,8 @@ class Environment extends WebGLSub {
 				.add(this.environmentMap, 'intensity')
 				.name('envMapIntensity')
 				.min(0)
-				.max(4)
-				.step(0.001)
+				.max(10)
+				.step(0.01)
 				.onChange(this.environmentMap.updateMaterials)
 		}
 	}

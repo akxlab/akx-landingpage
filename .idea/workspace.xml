@@ -2,8 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eee07431-0dc3-4e16-ac64-d34aa0e286a2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian/textures/Scene_-_Root_baseColor.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian/textures/Scene_-_Root_emissive.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian/textures/Scene_-_Root_metallicRoughness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian/textures/Scene_-_Root_normal.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian_2/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian_2/scene.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian_2/scene.gltf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/_metadata.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landing/class/three/Camera.ts" beforeDir="false" afterPath="$PROJECT_DIR$/landing/class/three/Camera.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/class/three/Debug.ts" beforeDir="false" afterPath="$PROJECT_DIR$/landing/class/three/Debug.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/class/three/Layers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/landing/class/three/Layers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/class/three/Raycaster.ts" beforeDir="false" afterPath="$PROJECT_DIR$/landing/class/three/Raycaster.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/class/three/Renderer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/landing/class/three/Renderer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/class/three/World/Environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/landing/class/three/World/Environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/class/three/World/Guardian.ts" beforeDir="false" afterPath="$PROJECT_DIR$/landing/class/three/World/Guardian.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/public/models/quantum_guardian/license.txt" beforeDir="false" afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian/license.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/public/models/quantum_guardian/scene.bin" beforeDir="false" afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian/scene.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/public/models/quantum_guardian/scene.gltf" beforeDir="false" afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian/scene.gltf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/public/models/quantum_guardian/textures/blinn1_baseColor.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian_2/textures/blinn1_baseColor.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/public/models/quantum_guardian/textures/blinn1_emissive.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian_2/textures/blinn1_emissive.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/public/models/quantum_guardian/textures/blinn1_metallicRoughness.png" beforeDir="false" afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian_2/textures/blinn1_metallicRoughness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/public/models/quantum_guardian/textures/blinn1_normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian_2/textures/blinn1_normal.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +54,7 @@
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
-    "last_opened_file_path": "/Users/nicolascloutier/IdeaProjects/akx-landingpage/landing/class/three/World",
+    "last_opened_file_path": "/Users/nicolascloutier/IdeaProjects/akx-landingpage/landing/public/models/quantum_guardian",
     "nodejs_package_manager_path": "npm",
     "ts.external.directory.path": "/Users/nicolascloutier/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/222.3739.54/IntelliJ IDEA.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
@@ -41,11 +62,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/landing/public/models/quantum_guardian" />
       <recent name="$PROJECT_DIR$/landing/class/three/World" />
       <recent name="$PROJECT_DIR$/landing/public/models" />
       <recent name="$PROJECT_DIR$/landing/public" />
       <recent name="$PROJECT_DIR$/landing" />
-      <recent name="$PROJECT_DIR$/landing/components" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -59,6 +80,7 @@
       <workItem from="1674152620316" duration="3651000" />
       <workItem from="1674158032247" duration="14683000" />
       <workItem from="1674217233713" duration="33055000" />
+      <workItem from="1674575294863" duration="4645000" />
     </task>
     <servers />
   </component>
@@ -90,19 +112,16 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/landing/components/home/Hero.vue</url>
           <line>42</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/landing/components/home/Hero.vue</url>
           <line>36</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/landing/components/home/Hero.vue</url>
           <line>33</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>

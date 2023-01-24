@@ -1,11 +1,11 @@
 Model Information:
-* title:	QUANTUM GAURDIAN
-* source:	https://sketchfab.com/3d-models/quantum-gaurdian-2a74beb5f22045d49c7d07ce46d633c9
-* author:	VanadiumStudio (https://sketchfab.com/vjprojects2020)
+* title:	Heavy Armored Mech
+* source:	https://sketchfab.com/3d-models/heavy-armored-mech-e45e96a4f23c4b9baa95463a235974e9
+* author:	nataliedesign (https://sketchfab.com/nataliedesign)
 
 Model License:
 * license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
 * requirements:	Author must be credited. Commercial use is allowed.
 
 If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
-This work is based on "QUANTUM GAURDIAN" (https://sketchfab.com/3d-models/quantum-gaurdian-2a74beb5f22045d49c7d07ce46d633c9) by VanadiumStudio (https://sketchfab.com/vjprojects2020) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+This work is based on "Heavy Armored Mech" (https://sketchfab.com/3d-models/heavy-armored-mech-e45e96a4f23c4b9baa95463a235974e9) by nataliedesign (https://sketchfab.com/nataliedesign) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,6 +1,6 @@
 {
   "hash": "38278639",
-  "browserHash": "4d0d9673",
+  "browserHash": "9cb69e6f",
   "optimized": {
     "vue": {
       "src": "../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
@@ -102,6 +102,12 @@
       "src": "../../node_modules/three/examples/jsm/libs/stats.module.js",
       "file": "three_examples_jsm_libs_stats__module__js.js",
       "fileHash": "dc234177",
+      "needsInterop": false
+    },
+    "three/examples/jsm/offscreen/scene": {
+      "src": "../../node_modules/three/examples/jsm/offscreen/scene.js",
+      "file": "three_examples_jsm_offscreen_scene.js",
+      "fileHash": "498f1baa",
       "needsInterop": false
     }
   },

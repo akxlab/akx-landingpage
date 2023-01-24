@@ -7,8 +7,8 @@ class Debug {
 	stats: Stats = Stats()
 
 	constructor() {
-		this.setGUI()
-		this.setStats()
+	//	this.setGUI()
+	//	this.setStats()
 	}
 
 	setGUI() {

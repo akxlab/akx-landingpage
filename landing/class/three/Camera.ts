@@ -18,8 +18,8 @@ class Camera extends WebGLSub {
 	}
 
 	setInstance() {
-		this.instance = new THREE.PerspectiveCamera(30, WebGL.sizes.width / WebGL.sizes.height, 1, 1000)
-		this.instance.position.set(4, 0, 1.2)
+		this.instance = new THREE.PerspectiveCamera(22, WebGL.sizes.width / WebGL.sizes.height, 0.5, 1000)
+		this.instance.position.set(2, 2, 12)
 		WebGL.scene.add(this.instance)
 	}
 
@@ -30,7 +30,7 @@ class Camera extends WebGLSub {
 	setControls() {
 		this.controls = new OrbitControls(this.instance!, WebGL.canvas)
 		this.controls.enableDamping = true
-		this.controls.enabled = false;
+		this.controls.enabled = true;
 	}
 
 	onResize() {
