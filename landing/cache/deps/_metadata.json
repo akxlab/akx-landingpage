@@ -1,6 +1,6 @@
 {
   "hash": "38278639",
-  "browserHash": "9cb69e6f",
+  "browserHash": "4e7daabf",
   "optimized": {
     "vue": {
       "src": "../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
@@ -109,9 +109,48 @@
       "file": "three_examples_jsm_offscreen_scene.js",
       "fileHash": "498f1baa",
       "needsInterop": false
+    },
+    "three/examples/jsm/postprocessing/RenderPass": {
+      "src": "../../node_modules/three/examples/jsm/postprocessing/RenderPass.js",
+      "file": "three_examples_jsm_postprocessing_RenderPass.js",
+      "fileHash": "694ca099",
+      "needsInterop": false
+    },
+    "three/examples/jsm/shaders/FXAAShader": {
+      "src": "../../node_modules/three/examples/jsm/shaders/FXAAShader.js",
+      "file": "three_examples_jsm_shaders_FXAAShader.js",
+      "fileHash": "4cb7f939",
+      "needsInterop": false
+    },
+    "three/examples/jsm/postprocessing/ShaderPass": {
+      "src": "../../node_modules/three/examples/jsm/postprocessing/ShaderPass.js",
+      "file": "three_examples_jsm_postprocessing_ShaderPass.js",
+      "fileHash": "0b5f3c35",
+      "needsInterop": false
+    },
+    "three/examples/jsm/postprocessing/EffectComposer": {
+      "src": "../../node_modules/three/examples/jsm/postprocessing/EffectComposer.js",
+      "file": "three_examples_jsm_postprocessing_EffectComposer.js",
+      "fileHash": "d5d17b91",
+      "needsInterop": false
+    },
+    "three/examples/jsm/shaders/CopyShader": {
+      "src": "../../node_modules/three/examples/jsm/shaders/CopyShader.js",
+      "file": "three_examples_jsm_shaders_CopyShader.js",
+      "fileHash": "73160844",
+      "needsInterop": false
     }
   },
   "chunks": {
+    "chunk-CBQNSZ4A": {
+      "file": "chunk-CBQNSZ4A.js"
+    },
+    "chunk-SF6IFTWK": {
+      "file": "chunk-SF6IFTWK.js"
+    },
+    "chunk-YXRZRKSB": {
+      "file": "chunk-YXRZRKSB.js"
+    },
     "chunk-O66LVNQA": {
       "file": "chunk-O66LVNQA.js"
     },

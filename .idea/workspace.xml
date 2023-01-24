@@ -2,29 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eee07431-0dc3-4e16-ac64-d34aa0e286a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian/textures/Scene_-_Root_baseColor.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian/textures/Scene_-_Root_emissive.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian/textures/Scene_-_Root_metallicRoughness.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian/textures/Scene_-_Root_normal.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian_2/license.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian_2/scene.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian_2/scene.gltf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landing/cache/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/_metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/class/three/Camera.ts" beforeDir="false" afterPath="$PROJECT_DIR$/landing/class/three/Camera.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/class/three/Debug.ts" beforeDir="false" afterPath="$PROJECT_DIR$/landing/class/three/Debug.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/class/three/Layers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/landing/class/three/Layers.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/class/three/Raycaster.ts" beforeDir="false" afterPath="$PROJECT_DIR$/landing/class/three/Raycaster.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landing/class/three/Renderer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/landing/class/three/Renderer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/class/three/World/Environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/landing/class/three/World/Environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/class/three/World/Guardian.ts" beforeDir="false" afterPath="$PROJECT_DIR$/landing/class/three/World/Guardian.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/public/models/quantum_guardian/license.txt" beforeDir="false" afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian/license.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/public/models/quantum_guardian/scene.bin" beforeDir="false" afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian/scene.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/public/models/quantum_guardian/scene.gltf" beforeDir="false" afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian/scene.gltf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/public/models/quantum_guardian/textures/blinn1_baseColor.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian_2/textures/blinn1_baseColor.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/public/models/quantum_guardian/textures/blinn1_emissive.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian_2/textures/blinn1_emissive.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/public/models/quantum_guardian/textures/blinn1_metallicRoughness.png" beforeDir="false" afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian_2/textures/blinn1_metallicRoughness.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/public/models/quantum_guardian/textures/blinn1_normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/landing/public/models/quantum_guardian_2/textures/blinn1_normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/i18n/en-US.json" beforeDir="false" afterPath="$PROJECT_DIR$/landing/i18n/en-US.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/pages/three.vue" beforeDir="false" afterPath="$PROJECT_DIR$/landing/pages/three.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +62,7 @@
       <workItem from="1674152620316" duration="3651000" />
       <workItem from="1674158032247" duration="14683000" />
       <workItem from="1674217233713" duration="33055000" />
-      <workItem from="1674575294863" duration="4645000" />
+      <workItem from="1674575294863" duration="6264000" />
     </task>
     <servers />
   </component>

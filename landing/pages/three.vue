@@ -14,7 +14,7 @@ overflow:hidden;
 </style>
 
 <template>
-  <div ref="canvasHolder" class="canvasHolder">
+  <div ref="canvasHolder" class="canvasHolder" id="canvasHolder">
     <ThreeCanvas  />
   </div>
 </template>
