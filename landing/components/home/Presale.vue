@@ -19,6 +19,8 @@ const { t } = useI18n()
 
       </v-col>
       <v-col cols="12">
+
+
         <PaymentSimple />
       </v-col>
     </v-row>
