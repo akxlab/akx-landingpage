@@ -28,11 +28,12 @@ class Guardian extends WebGLSub {
 
 	setModel() {
 		this.model = this.resource.scene
-		this.model.scale.set(0.9,0.9,0.9)
-		this.model.position.setX(0);
-		this.model.position.setY(-3.5);
+		this.model.scale.set(0.8,0.75,0.7)
+		this.model.position.setX(-1.7);
+		this.model.position.setY(-2.8);
 		this.model.name = EntitiesName.GUARDIAN
 		this.model.receiveShadow = true;
+
 		WebGL.scene.add(this.model)
 
 		/*this.model.traverse((child) => {

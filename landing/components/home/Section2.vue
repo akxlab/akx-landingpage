@@ -60,49 +60,73 @@ const { t } = useI18n()
 </template>
 <style>
 
-.line-clamp-1 {
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  display: -webkit-box;
-  overflow: hidden;
-  font-size: 1.5rem;
-}
-.gradient-border-2 {
-  border: 2px solid transparent;
+@media (min-width:390px) {
+  .canvasHolder, .atom-gradient {
+    display:none;
+  }
 }
 
-.btn-border-gradient {
-  background: linear-gradient(90deg,#18181b,#18181b),linear-gradient(to bottom right,#00dc82,#36e4da,#16a79e);
-  background-clip: padding-box,border-box;
-  background-origin: padding-box,border-box;
-}
+@media (min-width:1600px) {
 
-.hero-h2 {
-  font-size:3rem;
-  line-height: 1rem;
-}
 
-.hero-h2 strong {
-  color: #00DC82FF;
-}
+  .canvasHolder, .canvas {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
 
-.hero-text {
-  font-size:1.2rem;
-  line-height:2rem;
-}
+    overflow: visible;
+    pointer-events: all;
+    z-index: 1;
+    text-align: right;
+  }
 
-.atom-gradient{
+  #canvas {
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+  }
 
-  height:400px;
-  width:100%;
 
-  text-align:center;
-  margin-right:-180px;
+  .line-clamp-1 {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    overflow: hidden;
+    font-size: 1.5rem;
+  }
 
-  -webkit-mask-image: radial-gradient(ellipse 60% 90% at 28% 78%, rgb(94, 167, 227) 20%, transparent 90%);
-  /*  mask-image: radial-gradient(ellipse 90% 80% at 48% 78%, black 40%, transparent 50%);
-    right:-50px;*/
+  .gradient-border-2 {
+    border: 2px solid transparent;
+  }
 
+  .btn-border-gradient {
+    background: linear-gradient(90deg, #18181b, #18181b), linear-gradient(to bottom right, #00dc82, #36e4da, #16a79e);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+  }
+
+  .hero-h1 {
+    font-size: 4.3rem;
+    line-height: 4.6rem;
+  }
+
+  p.hero-text {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .atom-gradient {
+
+
+    display: block;
+    overflow: hidden;
+
+    /* -webkit-mask-image: radial-gradient(ellipse 60% 90% at 28% 78%, rgb(94, 167, 227) 20%, transparent 70%);*/
+    /*mask-image: radial-gradient(ellipse 90% 80% at 48% 78%, black 40%, transparent 50%);
+*/
+
+  }
 }
 
 </style>

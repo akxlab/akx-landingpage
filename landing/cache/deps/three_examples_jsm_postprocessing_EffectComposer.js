@@ -1,12 +1,12 @@
 import {
+  CopyShader
+} from "./chunk-YXRZRKSB.js";
+import {
   ShaderPass
 } from "./chunk-CBQNSZ4A.js";
 import {
   Pass
 } from "./chunk-SF6IFTWK.js";
-import {
-  CopyShader
-} from "./chunk-YXRZRKSB.js";
 import {
   BufferGeometry,
   Clock,
@@ -18,7 +18,7 @@ import {
   Vector2,
   WebGLRenderTarget
 } from "./chunk-O66LVNQA.js";
-import "./chunk-HRVARA6P.js";
+import "./chunk-FE6Y45BL.js";
 
 // node_modules/three/examples/jsm/postprocessing/MaskPass.js
 var MaskPass = class extends Pass {

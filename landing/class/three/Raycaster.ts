@@ -18,7 +18,7 @@ class Raycaster extends WebGLSub {
 	}
 
 	onUpdate() {
-		if (!WebGL.mouse.isMoving) return
+		/*if (!WebGL.mouse.isMoving) return
 		this.instance.setFromCamera(this.pointer, WebGL.camera.instance)
 
 		// calculate objects intersecting the picking ray
@@ -30,7 +30,7 @@ class Raycaster extends WebGLSub {
 			if (object.name == 'CUBE') {
 				object.material.uniforms.uColor.value = new THREE.Color(0xff0000)
 			}
-		}
+		}*/
 	}
 
 	setLayers(layerId: EntitiesLayer) {

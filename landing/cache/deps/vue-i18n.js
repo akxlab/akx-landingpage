@@ -8,11 +8,11 @@ import {
   createI18n,
   useI18n,
   vTDirective
-} from "./chunk-K5CU5EBC.js";
-import "./chunk-WCHNXXWT.js";
+} from "./chunk-GWAR3SMS.js";
 import "./chunk-JUYB7PGA.js";
 import "./chunk-BU7L7KZO.js";
-import "./chunk-HRVARA6P.js";
+import "./chunk-WCHNXXWT.js";
+import "./chunk-FE6Y45BL.js";
 export {
   DatetimeFormat,
   I18nInjectionKey,

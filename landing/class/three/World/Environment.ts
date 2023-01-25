@@ -22,7 +22,7 @@ class Environment extends WebGLSub {
 
 	setSunLight() {
 		this.sunLight = new THREE.DirectionalLight('#ffffff', 15)
-		this.sunLight.castShadow = true
+		this.sunLight.castShadow = false
 		this.sunLight.shadow.camera.far = -5
 		this.sunLight.shadow.mapSize.set(512,512)
 		this.sunLight.shadow.normalBias = 0.05

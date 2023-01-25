@@ -2,19 +2,19 @@ import {
   createRouter,
   useRoute,
   useRouter
-} from "./chunk-XSIEZT6M.js";
+} from "./chunk-IN2R7X62.js";
 import {
   vue_demi_exports
-} from "./chunk-TMSYC7QB.js";
+} from "./chunk-EWIOX7UU.js";
 import {
   useI18n
-} from "./chunk-K5CU5EBC.js";
-import "./chunk-WCHNXXWT.js";
+} from "./chunk-GWAR3SMS.js";
 import "./chunk-JUYB7PGA.js";
 import "./chunk-BU7L7KZO.js";
+import "./chunk-WCHNXXWT.js";
 import {
   __publicField
-} from "./chunk-HRVARA6P.js";
+} from "./chunk-FE6Y45BL.js";
 
 // node_modules/@nuxtjs/i18n/node_modules/@intlify/vue-router-bridge/lib/index.mjs
 var isVueRouter4 = true;

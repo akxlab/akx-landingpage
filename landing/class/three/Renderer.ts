@@ -34,11 +34,11 @@ class Renderer extends WebGLSub {
 		this.instance.outputEncoding = THREE.sRGBEncoding
 		this.instance.toneMapping = THREE.ACESFilmicToneMapping
 		this.instance.toneMappingExposure = 1.5;
-		this.instance.shadowMap.enabled = false;
+		this.instance.shadowMap.enabled = true;
 		this.instance.shadowMap.type = THREE.PCFSoftShadowMap
 		this.instance.setClearColor(0x111111, 1)
 		this.instance.setSize(WebGL.sizes.width, WebGL.sizes.height)
-		this.instance.setPixelRatio(WebGL.sizes.pixelRatio * 0.7)
+		this.instance.setPixelRatio(WebGL.sizes.pixelRatio * 0.5)
 
 	}
 

@@ -1,21 +1,4 @@
 import {
-  Fragment,
-  Text,
-  computed,
-  createVNode,
-  effectScope,
-  getCurrentInstance,
-  h,
-  inject,
-  isRef,
-  onBeforeMount,
-  onMounted,
-  onUnmounted,
-  ref,
-  shallowRef,
-  watch
-} from "./chunk-WCHNXXWT.js";
-import {
   setupDevtoolsPlugin
 } from "./chunk-JUYB7PGA.js";
 import {
@@ -44,6 +27,23 @@ import {
   toDisplayString,
   warn
 } from "./chunk-BU7L7KZO.js";
+import {
+  Fragment,
+  Text,
+  computed,
+  createVNode,
+  effectScope,
+  getCurrentInstance,
+  h,
+  inject,
+  isRef,
+  onBeforeMount,
+  onMounted,
+  onUnmounted,
+  ref,
+  shallowRef,
+  watch
+} from "./chunk-WCHNXXWT.js";
 
 // node_modules/@intlify/message-compiler/dist/message-compiler.mjs
 var CompileErrorCodes = {
@@ -4634,4 +4634,4 @@ export {
   * (c) 2023 kazuya kawaguchi
   * Released under the MIT License.
   */
-//# sourceMappingURL=chunk-K5CU5EBC.js.map
+//# sourceMappingURL=chunk-GWAR3SMS.js.map

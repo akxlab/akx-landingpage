@@ -1,7 +1,7 @@
 import {
   Vector2
 } from "./chunk-O66LVNQA.js";
-import "./chunk-HRVARA6P.js";
+import "./chunk-FE6Y45BL.js";
 
 // node_modules/three/examples/jsm/shaders/FXAAShader.js
 var FXAAShader = {
