@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eee07431-0dc3-4e16-ac64-d34aa0e286a2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/landing/components/checkout/WithWallet.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/components/common/AppBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/landing/components/common/AppBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/components/home/Hero.vue" beforeDir="false" afterPath="$PROJECT_DIR$/landing/components/home/Hero.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landing/components/home/Presale.vue" beforeDir="false" afterPath="$PROJECT_DIR$/landing/components/home/Presale.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/components/payment/Simple.vue" beforeDir="false" afterPath="$PROJECT_DIR$/landing/components/payment/Simple.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/i18n/en-US.json" beforeDir="false" afterPath="$PROJECT_DIR$/landing/i18n/en-US.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/landing/pages/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +63,7 @@
       <workItem from="1674152620316" duration="3651000" />
       <workItem from="1674158032247" duration="14683000" />
       <workItem from="1674217233713" duration="33055000" />
-      <workItem from="1674575294863" duration="14653000" />
+      <workItem from="1674575294863" duration="16654000" />
     </task>
     <servers />
   </component>

@@ -2,7 +2,7 @@
 </script>
 <template>
 
-  <v-app-bar  elevation="0" height="60" style="border-bottom:rgba(255,255,255,0.1) 1px solid;" class="horizontaTopbar app-bar-top" color="transparent" >
+  <v-app-bar  elevation="0" height="60" style="border-bottom:rgba(255,255,255,0.1) 1px solid;" class="horizontaTopbar app-bar-top" color="rgba(17,17,17,0.8)" >
     <div >
       <div>
         <div class="d-flex" > <img src="~/assets/akx-logo-x.svg" width="80" height="50" @click="window.location.href = '/'" />

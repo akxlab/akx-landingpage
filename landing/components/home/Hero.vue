@@ -9,9 +9,9 @@ const { t } = useI18n()
 </script>
 <template>
 
-  <v-card max-width="1900" width="100%" class="ml-auto mr-auto pa-12" style="margin-top:80px;" color="transparent">
+  <v-card max-width="1600" width="100%" class="ml-auto mr-auto pa-12" style="margin-top:80px;" color="transparent">
     <v-row>
-      <v-col cols="12" lg="5">
+      <v-col cols="12" lg="6">
         <h1 class="hero-h1">
 
           {{t('home.heroh1-2')}}<br />
@@ -21,7 +21,7 @@ const { t } = useI18n()
          {{t('home.cryptoquantumblurb')}}
                  </p>
       </v-col>
-      <v-col cols="12" lg="7" align="right" class="atom-gradient">
+      <v-col cols="12" lg="6" align="right" class="atom-gradient">
 
        <!-- <v-icon size="400" color="#05b187" >fa-duotone fa-atom-simple</v-icon>-->
            <div ref="canvasHolder" class="canvasHolder">
@@ -47,6 +47,7 @@ display:block;
   overflow:hidden;
   pointer-events: all;
   z-index: 1;
+  text-align:right;
 }
 
 #canvas {
