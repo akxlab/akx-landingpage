@@ -31,10 +31,7 @@ const { t } = useI18n()
            </div>
 
       </v-col>
-      <v-col cols="12">
-        <v-btn variant="outlined" class="gradient-border-2 btn-border-gradient pl-3 pr-3 mt-8" size="x-large" width="100%" color="#05b187"><span class="line-clamp-1">Get Notified when presale is available</span></v-btn>
 
-      </v-col>
     </v-row>
   </v-card>
 

@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eee07431-0dc3-4e16-ac64-d34aa0e286a2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/landing/components/home/Presale.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/landing/components/payment/Simple.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/class/three/Renderer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/landing/class/three/Renderer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/class/three/WebGL.ts" beforeDir="false" afterPath="$PROJECT_DIR$/landing/class/three/WebGL.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/class/three/World/Guardian.ts" beforeDir="false" afterPath="$PROJECT_DIR$/landing/class/three/World/Guardian.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/components/home/Hero.vue" beforeDir="false" afterPath="$PROJECT_DIR$/landing/components/home/Hero.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/i18n/en-US.json" beforeDir="false" afterPath="$PROJECT_DIR$/landing/i18n/en-US.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/landing/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/landing/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/landing/pages/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +65,7 @@
       <workItem from="1674152620316" duration="3651000" />
       <workItem from="1674158032247" duration="14683000" />
       <workItem from="1674217233713" duration="33055000" />
-      <workItem from="1674575294863" duration="9429000" />
+      <workItem from="1674575294863" duration="12956000" />
     </task>
     <servers />
   </component>
@@ -92,18 +96,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/landing/components/home/Hero.vue</url>
-          <line>42</line>
+          <line>39</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/landing/components/home/Hero.vue</url>
-          <line>36</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/landing/components/home/Hero.vue</url>
-          <line>33</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
