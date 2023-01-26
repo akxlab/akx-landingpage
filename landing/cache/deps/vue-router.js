@@ -25,7 +25,7 @@ import {
 } from "./chunk-IN2R7X62.js";
 import "./chunk-JUYB7PGA.js";
 import "./chunk-WCHNXXWT.js";
-import "./chunk-FE6Y45BL.js";
+import "./chunk-IJ7IQSKN.js";
 export {
   NavigationFailureType,
   RouterLink,

@@ -5,7 +5,7 @@ import {
 } from "./chunk-IN2R7X62.js";
 import {
   vue_demi_exports
-} from "./chunk-EWIOX7UU.js";
+} from "./chunk-ZL7CHZ5F.js";
 import {
   useI18n
 } from "./chunk-GWAR3SMS.js";
@@ -14,7 +14,7 @@ import "./chunk-BU7L7KZO.js";
 import "./chunk-WCHNXXWT.js";
 import {
   __publicField
-} from "./chunk-FE6Y45BL.js";
+} from "./chunk-IJ7IQSKN.js";
 
 // node_modules/@nuxtjs/i18n/node_modules/@intlify/vue-router-bridge/lib/index.mjs
 var isVueRouter4 = true;

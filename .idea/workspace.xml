@@ -2,8 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eee07431-0dc3-4e16-ac64-d34aa0e286a2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/landing/composables/useWallet.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/.npmrc" beforeDir="false" afterPath="$PROJECT_DIR$/landing/.npmrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/@intlify_shared.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/@intlify_shared.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/_metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/aes-js.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/aes-js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/aes-js.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/aes-js.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/bech32.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/bech32.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/bech32.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/bech32.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/bn__js.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/bn__js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/bn__js.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/bn__js.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-EWIOX7UU.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-EWIOX7UU.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-FE6Y45BL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-FE6Y45BL.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/cookie-es.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/cookie-es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/gsap.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/gsap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/hash__js.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/hash__js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/hash__js.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/hash__js.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/is-https.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/is-https.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/js-cookie.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/js-cookie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/js-sha3.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/js-sha3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/js-sha3.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/js-sha3.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/lil-gui.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/lil-gui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/pinia.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/pinia.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/scrypt-js.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/scrypt-js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/scrypt-js.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/scrypt-js.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/three.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/three.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_controls_OrbitControls.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_controls_OrbitControls.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_libs_stats__module__js.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_libs_stats__module__js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_loaders_GLTFLoader__js.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_loaders_GLTFLoader__js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_postprocessing_EffectComposer.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_postprocessing_EffectComposer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_postprocessing_RenderPass.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_postprocessing_RenderPass.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_postprocessing_ShaderPass.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_postprocessing_ShaderPass.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_shaders_CopyShader.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_shaders_CopyShader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_shaders_FXAAShader.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_shaders_FXAAShader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/ufo.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/ufo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/vue-i18n-routing.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/vue-i18n-routing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/vue-i18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/vue-i18n.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/vue-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/vue-router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/vue.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landing/components/payment/Simple.vue" beforeDir="false" afterPath="$PROJECT_DIR$/landing/components/payment/Simple.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/landing/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/landing/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +75,7 @@
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
-    "last_opened_file_path": "/Users/nicolascloutier/IdeaProjects/akx-landingpage/landing/public/models/quantum_guardian",
+    "last_opened_file_path": "/Users/nicolascloutier/IdeaProjects/akx-landingpage/landing/composables",
     "nodejs_package_manager_path": "npm",
     "ts.external.directory.path": "/Users/nicolascloutier/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/222.3739.54/IntelliJ IDEA.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
@@ -41,11 +83,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/landing/composables" />
       <recent name="$PROJECT_DIR$/landing/public/models/quantum_guardian" />
       <recent name="$PROJECT_DIR$/landing/class/three/World" />
       <recent name="$PROJECT_DIR$/landing/public/models" />
       <recent name="$PROJECT_DIR$/landing/public" />
-      <recent name="$PROJECT_DIR$/landing" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -59,7 +101,7 @@
       <workItem from="1674152620316" duration="3651000" />
       <workItem from="1674158032247" duration="14683000" />
       <workItem from="1674217233713" duration="33055000" />
-      <workItem from="1674575294863" duration="28249000" />
+      <workItem from="1674575294863" duration="38461000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,4 @@
-import "./chunk-FE6Y45BL.js";
+import "./chunk-IJ7IQSKN.js";
 
 // node_modules/three/examples/jsm/libs/stats.module.js
 var Stats = function() {

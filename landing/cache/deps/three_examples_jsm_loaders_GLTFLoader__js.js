@@ -63,7 +63,7 @@ import {
   VectorKeyframeTrack,
   sRGBEncoding
 } from "./chunk-O66LVNQA.js";
-import "./chunk-FE6Y45BL.js";
+import "./chunk-IJ7IQSKN.js";
 
 // node_modules/three/examples/jsm/loaders/GLTFLoader.js
 var GLTFLoader = class extends Loader {
