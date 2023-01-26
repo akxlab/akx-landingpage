@@ -12,7 +12,7 @@ const selectedChip = useState('sel_chip', () => "");
 
 
 function calcOut(price:number) {
-  amountOut.value = amountIn.value / price;
+  amountOut.value = (amountIn.value / price).toLocaleString();
 }
 
 
@@ -56,8 +56,8 @@ onMounted(async () => {
           </v-col></v-row>
 
 
-          <v-row><v-col cols="12" lg="6"><v-text-field type="number"  autofocus single-line v-model="amountIn" prefix="you send" :suffix="selectedChip" append-icon="fa-light fa-arrow-right"></v-text-field></v-col>
-          <v-col cols="12" lg="6"><v-text-field type="number" autofocus single-line v-model="amountOut" prefix="you get" suffix="AKX"></v-text-field></v-col>
+          <v-row><v-col cols="12" lg="6"><v-text-field  class="large_number" @keydown="calcOut(this.value)" variant="outlined" autofocus single-line v-model="amountIn" prefix="you send" :suffix="selectedChip" append-icon="fa-light fa-arrow-right"></v-text-field></v-col>
+          <v-col cols="12" lg="6"><v-text-field  class="large_number" autofocus single-line v-model="amountOut" variant="outlined" prefix="you get" suffix="AKX"></v-text-field></v-col>
           <v-col cols="12" lg="12" align="right"><v-btn variant="elevated" size="x-large" color="#00DC82FF" style="color:black">CONFIRM YOUR ORDER</v-btn></v-col>
           </v-row>
 
@@ -66,6 +66,12 @@ onMounted(async () => {
 </template>
 
 <style>
+
+.large_number input {
+  font-size:2rem;
+  font-weight: 700;
+  padding-left:30px;
+}
 
 .chip_currency {
   border:2px solid transparent;
