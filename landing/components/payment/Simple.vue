@@ -85,7 +85,7 @@ onMounted(async () => {
 
 <template>
 
-      <v-form>
+     <v-form>
 
         <v-row>
           <v-col cols="12" lg="12">

@@ -79,8 +79,7 @@ import {
   updateAccountCenter,
   update_keyed_each,
   wallets$
-} from "./chunk-VULQFW3P.js";
-import "./chunk-U7SIKSNY.js";
+} from "./chunk-JCO65AIX.js";
 import {
   ProviderRpcErrorCode,
   require_joi_browser_min
@@ -91,6 +90,7 @@ import "./chunk-S6BB4OWC.js";
 import "./chunk-LUAEQXGQ.js";
 import "./chunk-NEUIYBRM.js";
 import "./chunk-RRF6SA7V.js";
+import "./chunk-ZZSVE7H3.js";
 import {
   __toESM
 } from "./chunk-IJ7IQSKN.js";
@@ -2833,4 +2833,4 @@ var Index = class extends SvelteComponent {
 export {
   Index as default
 };
-//# sourceMappingURL=Index-db6b756b-Z7W7N5Y3.js.map
+//# sourceMappingURL=Index-db6b756b-FHTJIWFQ.js.map

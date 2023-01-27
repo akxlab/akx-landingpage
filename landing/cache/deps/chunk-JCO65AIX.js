@@ -1,7 +1,4 @@
 import {
-  bowser_default
-} from "./chunk-U7SIKSNY.js";
-import {
   ProviderRpcErrorCode,
   SofiaProRegular,
   bignumber_default,
@@ -33,6 +30,10 @@ import {
 import {
   require_bech32
 } from "./chunk-RRF6SA7V.js";
+import {
+  crypto_exports,
+  init_crypto
+} from "./chunk-ZZSVE7H3.js";
 import {
   __commonJS,
   __esm,
@@ -6716,18 +6717,6 @@ var require_bn3 = __commonJS({
         return res._forceRed(this);
       };
     })(typeof module === "undefined" || module, exports);
-  }
-});
-
-// node-modules-polyfills:crypto
-var crypto_exports = {};
-__export(crypto_exports, {
-  default: () => crypto_default
-});
-var crypto_default;
-var init_crypto = __esm({
-  "node-modules-polyfills:crypto"() {
-    crypto_default = {};
   }
 });
 
@@ -30935,6 +30924,1625 @@ function withLatestFrom() {
   });
 }
 
+// node_modules/bowser/src/constants.js
+var BROWSER_ALIASES_MAP = {
+  "Amazon Silk": "amazon_silk",
+  "Android Browser": "android",
+  Bada: "bada",
+  BlackBerry: "blackberry",
+  Chrome: "chrome",
+  Chromium: "chromium",
+  Electron: "electron",
+  Epiphany: "epiphany",
+  Firefox: "firefox",
+  Focus: "focus",
+  Generic: "generic",
+  "Google Search": "google_search",
+  Googlebot: "googlebot",
+  "Internet Explorer": "ie",
+  "K-Meleon": "k_meleon",
+  Maxthon: "maxthon",
+  "Microsoft Edge": "edge",
+  "MZ Browser": "mz",
+  "NAVER Whale Browser": "naver",
+  Opera: "opera",
+  "Opera Coast": "opera_coast",
+  PhantomJS: "phantomjs",
+  Puffin: "puffin",
+  QupZilla: "qupzilla",
+  QQ: "qq",
+  QQLite: "qqlite",
+  Safari: "safari",
+  Sailfish: "sailfish",
+  "Samsung Internet for Android": "samsung_internet",
+  SeaMonkey: "seamonkey",
+  Sleipnir: "sleipnir",
+  Swing: "swing",
+  Tizen: "tizen",
+  "UC Browser": "uc",
+  Vivaldi: "vivaldi",
+  "WebOS Browser": "webos",
+  WeChat: "wechat",
+  "Yandex Browser": "yandex",
+  Roku: "roku"
+};
+var BROWSER_MAP = {
+  amazon_silk: "Amazon Silk",
+  android: "Android Browser",
+  bada: "Bada",
+  blackberry: "BlackBerry",
+  chrome: "Chrome",
+  chromium: "Chromium",
+  electron: "Electron",
+  epiphany: "Epiphany",
+  firefox: "Firefox",
+  focus: "Focus",
+  generic: "Generic",
+  googlebot: "Googlebot",
+  google_search: "Google Search",
+  ie: "Internet Explorer",
+  k_meleon: "K-Meleon",
+  maxthon: "Maxthon",
+  edge: "Microsoft Edge",
+  mz: "MZ Browser",
+  naver: "NAVER Whale Browser",
+  opera: "Opera",
+  opera_coast: "Opera Coast",
+  phantomjs: "PhantomJS",
+  puffin: "Puffin",
+  qupzilla: "QupZilla",
+  qq: "QQ Browser",
+  qqlite: "QQ Browser Lite",
+  safari: "Safari",
+  sailfish: "Sailfish",
+  samsung_internet: "Samsung Internet for Android",
+  seamonkey: "SeaMonkey",
+  sleipnir: "Sleipnir",
+  swing: "Swing",
+  tizen: "Tizen",
+  uc: "UC Browser",
+  vivaldi: "Vivaldi",
+  webos: "WebOS Browser",
+  wechat: "WeChat",
+  yandex: "Yandex Browser"
+};
+var PLATFORMS_MAP = {
+  tablet: "tablet",
+  mobile: "mobile",
+  desktop: "desktop",
+  tv: "tv"
+};
+var OS_MAP = {
+  WindowsPhone: "Windows Phone",
+  Windows: "Windows",
+  MacOS: "macOS",
+  iOS: "iOS",
+  Android: "Android",
+  WebOS: "WebOS",
+  BlackBerry: "BlackBerry",
+  Bada: "Bada",
+  Tizen: "Tizen",
+  Linux: "Linux",
+  ChromeOS: "Chrome OS",
+  PlayStation4: "PlayStation 4",
+  Roku: "Roku"
+};
+var ENGINE_MAP = {
+  EdgeHTML: "EdgeHTML",
+  Blink: "Blink",
+  Trident: "Trident",
+  Presto: "Presto",
+  Gecko: "Gecko",
+  WebKit: "WebKit"
+};
+
+// node_modules/bowser/src/utils.js
+var Utils = class {
+  static getFirstMatch(regexp, ua) {
+    const match = ua.match(regexp);
+    return match && match.length > 0 && match[1] || "";
+  }
+  static getSecondMatch(regexp, ua) {
+    const match = ua.match(regexp);
+    return match && match.length > 1 && match[2] || "";
+  }
+  static matchAndReturnConst(regexp, ua, _const) {
+    if (regexp.test(ua)) {
+      return _const;
+    }
+    return void 0;
+  }
+  static getWindowsVersionName(version36) {
+    switch (version36) {
+      case "NT":
+        return "NT";
+      case "XP":
+        return "XP";
+      case "NT 5.0":
+        return "2000";
+      case "NT 5.1":
+        return "XP";
+      case "NT 5.2":
+        return "2003";
+      case "NT 6.0":
+        return "Vista";
+      case "NT 6.1":
+        return "7";
+      case "NT 6.2":
+        return "8";
+      case "NT 6.3":
+        return "8.1";
+      case "NT 10.0":
+        return "10";
+      default:
+        return void 0;
+    }
+  }
+  static getMacOSVersionName(version36) {
+    const v2 = version36.split(".").splice(0, 2).map((s2) => parseInt(s2, 10) || 0);
+    v2.push(0);
+    if (v2[0] !== 10)
+      return void 0;
+    switch (v2[1]) {
+      case 5:
+        return "Leopard";
+      case 6:
+        return "Snow Leopard";
+      case 7:
+        return "Lion";
+      case 8:
+        return "Mountain Lion";
+      case 9:
+        return "Mavericks";
+      case 10:
+        return "Yosemite";
+      case 11:
+        return "El Capitan";
+      case 12:
+        return "Sierra";
+      case 13:
+        return "High Sierra";
+      case 14:
+        return "Mojave";
+      case 15:
+        return "Catalina";
+      default:
+        return void 0;
+    }
+  }
+  static getAndroidVersionName(version36) {
+    const v2 = version36.split(".").splice(0, 2).map((s2) => parseInt(s2, 10) || 0);
+    v2.push(0);
+    if (v2[0] === 1 && v2[1] < 5)
+      return void 0;
+    if (v2[0] === 1 && v2[1] < 6)
+      return "Cupcake";
+    if (v2[0] === 1 && v2[1] >= 6)
+      return "Donut";
+    if (v2[0] === 2 && v2[1] < 2)
+      return "Eclair";
+    if (v2[0] === 2 && v2[1] === 2)
+      return "Froyo";
+    if (v2[0] === 2 && v2[1] > 2)
+      return "Gingerbread";
+    if (v2[0] === 3)
+      return "Honeycomb";
+    if (v2[0] === 4 && v2[1] < 1)
+      return "Ice Cream Sandwich";
+    if (v2[0] === 4 && v2[1] < 4)
+      return "Jelly Bean";
+    if (v2[0] === 4 && v2[1] >= 4)
+      return "KitKat";
+    if (v2[0] === 5)
+      return "Lollipop";
+    if (v2[0] === 6)
+      return "Marshmallow";
+    if (v2[0] === 7)
+      return "Nougat";
+    if (v2[0] === 8)
+      return "Oreo";
+    if (v2[0] === 9)
+      return "Pie";
+    return void 0;
+  }
+  static getVersionPrecision(version36) {
+    return version36.split(".").length;
+  }
+  static compareVersions(versionA, versionB, isLoose = false) {
+    const versionAPrecision = Utils.getVersionPrecision(versionA);
+    const versionBPrecision = Utils.getVersionPrecision(versionB);
+    let precision = Math.max(versionAPrecision, versionBPrecision);
+    let lastPrecision = 0;
+    const chunks = Utils.map([versionA, versionB], (version36) => {
+      const delta = precision - Utils.getVersionPrecision(version36);
+      const _version = version36 + new Array(delta + 1).join(".0");
+      return Utils.map(_version.split("."), (chunk) => new Array(20 - chunk.length).join("0") + chunk).reverse();
+    });
+    if (isLoose) {
+      lastPrecision = precision - Math.min(versionAPrecision, versionBPrecision);
+    }
+    precision -= 1;
+    while (precision >= lastPrecision) {
+      if (chunks[0][precision] > chunks[1][precision]) {
+        return 1;
+      }
+      if (chunks[0][precision] === chunks[1][precision]) {
+        if (precision === lastPrecision) {
+          return 0;
+        }
+        precision -= 1;
+      } else if (chunks[0][precision] < chunks[1][precision]) {
+        return -1;
+      }
+    }
+    return void 0;
+  }
+  static map(arr, iterator2) {
+    const result = [];
+    let i2;
+    if (Array.prototype.map) {
+      return Array.prototype.map.call(arr, iterator2);
+    }
+    for (i2 = 0; i2 < arr.length; i2 += 1) {
+      result.push(iterator2(arr[i2]));
+    }
+    return result;
+  }
+  static find(arr, predicate) {
+    let i2;
+    let l2;
+    if (Array.prototype.find) {
+      return Array.prototype.find.call(arr, predicate);
+    }
+    for (i2 = 0, l2 = arr.length; i2 < l2; i2 += 1) {
+      const value = arr[i2];
+      if (predicate(value, i2)) {
+        return value;
+      }
+    }
+    return void 0;
+  }
+  static assign(obj, ...assigners) {
+    const result = obj;
+    let i2;
+    let l2;
+    if (Object.assign) {
+      return Object.assign(obj, ...assigners);
+    }
+    for (i2 = 0, l2 = assigners.length; i2 < l2; i2 += 1) {
+      const assigner = assigners[i2];
+      if (typeof assigner === "object" && assigner !== null) {
+        const keys = Object.keys(assigner);
+        keys.forEach((key2) => {
+          result[key2] = assigner[key2];
+        });
+      }
+    }
+    return obj;
+  }
+  static getBrowserAlias(browserName) {
+    return BROWSER_ALIASES_MAP[browserName];
+  }
+  static getBrowserTypeByAlias(browserAlias) {
+    return BROWSER_MAP[browserAlias] || "";
+  }
+};
+
+// node_modules/bowser/src/parser-browsers.js
+var commonVersionIdentifier = /version\/(\d+(\.?_?\d+)+)/i;
+var browsersList = [
+  {
+    test: [/googlebot/i],
+    describe(ua) {
+      const browser = {
+        name: "Googlebot"
+      };
+      const version36 = Utils.getFirstMatch(/googlebot\/(\d+(\.\d+))/i, ua) || Utils.getFirstMatch(commonVersionIdentifier, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/opera/i],
+    describe(ua) {
+      const browser = {
+        name: "Opera"
+      };
+      const version36 = Utils.getFirstMatch(commonVersionIdentifier, ua) || Utils.getFirstMatch(/(?:opera)[\s/](\d+(\.?_?\d+)+)/i, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/opr\/|opios/i],
+    describe(ua) {
+      const browser = {
+        name: "Opera"
+      };
+      const version36 = Utils.getFirstMatch(/(?:opr|opios)[\s/](\S+)/i, ua) || Utils.getFirstMatch(commonVersionIdentifier, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/SamsungBrowser/i],
+    describe(ua) {
+      const browser = {
+        name: "Samsung Internet for Android"
+      };
+      const version36 = Utils.getFirstMatch(commonVersionIdentifier, ua) || Utils.getFirstMatch(/(?:SamsungBrowser)[\s/](\d+(\.?_?\d+)+)/i, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/Whale/i],
+    describe(ua) {
+      const browser = {
+        name: "NAVER Whale Browser"
+      };
+      const version36 = Utils.getFirstMatch(commonVersionIdentifier, ua) || Utils.getFirstMatch(/(?:whale)[\s/](\d+(?:\.\d+)+)/i, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/MZBrowser/i],
+    describe(ua) {
+      const browser = {
+        name: "MZ Browser"
+      };
+      const version36 = Utils.getFirstMatch(/(?:MZBrowser)[\s/](\d+(?:\.\d+)+)/i, ua) || Utils.getFirstMatch(commonVersionIdentifier, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/focus/i],
+    describe(ua) {
+      const browser = {
+        name: "Focus"
+      };
+      const version36 = Utils.getFirstMatch(/(?:focus)[\s/](\d+(?:\.\d+)+)/i, ua) || Utils.getFirstMatch(commonVersionIdentifier, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/swing/i],
+    describe(ua) {
+      const browser = {
+        name: "Swing"
+      };
+      const version36 = Utils.getFirstMatch(/(?:swing)[\s/](\d+(?:\.\d+)+)/i, ua) || Utils.getFirstMatch(commonVersionIdentifier, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/coast/i],
+    describe(ua) {
+      const browser = {
+        name: "Opera Coast"
+      };
+      const version36 = Utils.getFirstMatch(commonVersionIdentifier, ua) || Utils.getFirstMatch(/(?:coast)[\s/](\d+(\.?_?\d+)+)/i, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/opt\/\d+(?:.?_?\d+)+/i],
+    describe(ua) {
+      const browser = {
+        name: "Opera Touch"
+      };
+      const version36 = Utils.getFirstMatch(/(?:opt)[\s/](\d+(\.?_?\d+)+)/i, ua) || Utils.getFirstMatch(commonVersionIdentifier, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/yabrowser/i],
+    describe(ua) {
+      const browser = {
+        name: "Yandex Browser"
+      };
+      const version36 = Utils.getFirstMatch(/(?:yabrowser)[\s/](\d+(\.?_?\d+)+)/i, ua) || Utils.getFirstMatch(commonVersionIdentifier, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/ucbrowser/i],
+    describe(ua) {
+      const browser = {
+        name: "UC Browser"
+      };
+      const version36 = Utils.getFirstMatch(commonVersionIdentifier, ua) || Utils.getFirstMatch(/(?:ucbrowser)[\s/](\d+(\.?_?\d+)+)/i, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/Maxthon|mxios/i],
+    describe(ua) {
+      const browser = {
+        name: "Maxthon"
+      };
+      const version36 = Utils.getFirstMatch(commonVersionIdentifier, ua) || Utils.getFirstMatch(/(?:Maxthon|mxios)[\s/](\d+(\.?_?\d+)+)/i, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/epiphany/i],
+    describe(ua) {
+      const browser = {
+        name: "Epiphany"
+      };
+      const version36 = Utils.getFirstMatch(commonVersionIdentifier, ua) || Utils.getFirstMatch(/(?:epiphany)[\s/](\d+(\.?_?\d+)+)/i, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/puffin/i],
+    describe(ua) {
+      const browser = {
+        name: "Puffin"
+      };
+      const version36 = Utils.getFirstMatch(commonVersionIdentifier, ua) || Utils.getFirstMatch(/(?:puffin)[\s/](\d+(\.?_?\d+)+)/i, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/sleipnir/i],
+    describe(ua) {
+      const browser = {
+        name: "Sleipnir"
+      };
+      const version36 = Utils.getFirstMatch(commonVersionIdentifier, ua) || Utils.getFirstMatch(/(?:sleipnir)[\s/](\d+(\.?_?\d+)+)/i, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/k-meleon/i],
+    describe(ua) {
+      const browser = {
+        name: "K-Meleon"
+      };
+      const version36 = Utils.getFirstMatch(commonVersionIdentifier, ua) || Utils.getFirstMatch(/(?:k-meleon)[\s/](\d+(\.?_?\d+)+)/i, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/micromessenger/i],
+    describe(ua) {
+      const browser = {
+        name: "WeChat"
+      };
+      const version36 = Utils.getFirstMatch(/(?:micromessenger)[\s/](\d+(\.?_?\d+)+)/i, ua) || Utils.getFirstMatch(commonVersionIdentifier, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/qqbrowser/i],
+    describe(ua) {
+      const browser = {
+        name: /qqbrowserlite/i.test(ua) ? "QQ Browser Lite" : "QQ Browser"
+      };
+      const version36 = Utils.getFirstMatch(/(?:qqbrowserlite|qqbrowser)[/](\d+(\.?_?\d+)+)/i, ua) || Utils.getFirstMatch(commonVersionIdentifier, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/msie|trident/i],
+    describe(ua) {
+      const browser = {
+        name: "Internet Explorer"
+      };
+      const version36 = Utils.getFirstMatch(/(?:msie |rv:)(\d+(\.?_?\d+)+)/i, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/\sedg\//i],
+    describe(ua) {
+      const browser = {
+        name: "Microsoft Edge"
+      };
+      const version36 = Utils.getFirstMatch(/\sedg\/(\d+(\.?_?\d+)+)/i, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/edg([ea]|ios)/i],
+    describe(ua) {
+      const browser = {
+        name: "Microsoft Edge"
+      };
+      const version36 = Utils.getSecondMatch(/edg([ea]|ios)\/(\d+(\.?_?\d+)+)/i, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/vivaldi/i],
+    describe(ua) {
+      const browser = {
+        name: "Vivaldi"
+      };
+      const version36 = Utils.getFirstMatch(/vivaldi\/(\d+(\.?_?\d+)+)/i, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/seamonkey/i],
+    describe(ua) {
+      const browser = {
+        name: "SeaMonkey"
+      };
+      const version36 = Utils.getFirstMatch(/seamonkey\/(\d+(\.?_?\d+)+)/i, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/sailfish/i],
+    describe(ua) {
+      const browser = {
+        name: "Sailfish"
+      };
+      const version36 = Utils.getFirstMatch(/sailfish\s?browser\/(\d+(\.\d+)?)/i, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/silk/i],
+    describe(ua) {
+      const browser = {
+        name: "Amazon Silk"
+      };
+      const version36 = Utils.getFirstMatch(/silk\/(\d+(\.?_?\d+)+)/i, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/phantom/i],
+    describe(ua) {
+      const browser = {
+        name: "PhantomJS"
+      };
+      const version36 = Utils.getFirstMatch(/phantomjs\/(\d+(\.?_?\d+)+)/i, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/slimerjs/i],
+    describe(ua) {
+      const browser = {
+        name: "SlimerJS"
+      };
+      const version36 = Utils.getFirstMatch(/slimerjs\/(\d+(\.?_?\d+)+)/i, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/blackberry|\bbb\d+/i, /rim\stablet/i],
+    describe(ua) {
+      const browser = {
+        name: "BlackBerry"
+      };
+      const version36 = Utils.getFirstMatch(commonVersionIdentifier, ua) || Utils.getFirstMatch(/blackberry[\d]+\/(\d+(\.?_?\d+)+)/i, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/(web|hpw)[o0]s/i],
+    describe(ua) {
+      const browser = {
+        name: "WebOS Browser"
+      };
+      const version36 = Utils.getFirstMatch(commonVersionIdentifier, ua) || Utils.getFirstMatch(/w(?:eb)?[o0]sbrowser\/(\d+(\.?_?\d+)+)/i, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/bada/i],
+    describe(ua) {
+      const browser = {
+        name: "Bada"
+      };
+      const version36 = Utils.getFirstMatch(/dolfin\/(\d+(\.?_?\d+)+)/i, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/tizen/i],
+    describe(ua) {
+      const browser = {
+        name: "Tizen"
+      };
+      const version36 = Utils.getFirstMatch(/(?:tizen\s?)?browser\/(\d+(\.?_?\d+)+)/i, ua) || Utils.getFirstMatch(commonVersionIdentifier, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/qupzilla/i],
+    describe(ua) {
+      const browser = {
+        name: "QupZilla"
+      };
+      const version36 = Utils.getFirstMatch(/(?:qupzilla)[\s/](\d+(\.?_?\d+)+)/i, ua) || Utils.getFirstMatch(commonVersionIdentifier, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/firefox|iceweasel|fxios/i],
+    describe(ua) {
+      const browser = {
+        name: "Firefox"
+      };
+      const version36 = Utils.getFirstMatch(/(?:firefox|iceweasel|fxios)[\s/](\d+(\.?_?\d+)+)/i, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/electron/i],
+    describe(ua) {
+      const browser = {
+        name: "Electron"
+      };
+      const version36 = Utils.getFirstMatch(/(?:electron)\/(\d+(\.?_?\d+)+)/i, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/MiuiBrowser/i],
+    describe(ua) {
+      const browser = {
+        name: "Miui"
+      };
+      const version36 = Utils.getFirstMatch(/(?:MiuiBrowser)[\s/](\d+(\.?_?\d+)+)/i, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/chromium/i],
+    describe(ua) {
+      const browser = {
+        name: "Chromium"
+      };
+      const version36 = Utils.getFirstMatch(/(?:chromium)[\s/](\d+(\.?_?\d+)+)/i, ua) || Utils.getFirstMatch(commonVersionIdentifier, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/chrome|crios|crmo/i],
+    describe(ua) {
+      const browser = {
+        name: "Chrome"
+      };
+      const version36 = Utils.getFirstMatch(/(?:chrome|crios|crmo)\/(\d+(\.?_?\d+)+)/i, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/GSA/i],
+    describe(ua) {
+      const browser = {
+        name: "Google Search"
+      };
+      const version36 = Utils.getFirstMatch(/(?:GSA)\/(\d+(\.?_?\d+)+)/i, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test(parser) {
+      const notLikeAndroid = !parser.test(/like android/i);
+      const butAndroid = parser.test(/android/i);
+      return notLikeAndroid && butAndroid;
+    },
+    describe(ua) {
+      const browser = {
+        name: "Android Browser"
+      };
+      const version36 = Utils.getFirstMatch(commonVersionIdentifier, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/playstation 4/i],
+    describe(ua) {
+      const browser = {
+        name: "PlayStation 4"
+      };
+      const version36 = Utils.getFirstMatch(commonVersionIdentifier, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/safari|applewebkit/i],
+    describe(ua) {
+      const browser = {
+        name: "Safari"
+      };
+      const version36 = Utils.getFirstMatch(commonVersionIdentifier, ua);
+      if (version36) {
+        browser.version = version36;
+      }
+      return browser;
+    }
+  },
+  {
+    test: [/.*/i],
+    describe(ua) {
+      const regexpWithoutDeviceSpec = /^(.*)\/(.*) /;
+      const regexpWithDeviceSpec = /^(.*)\/(.*)[ \t]\((.*)/;
+      const hasDeviceSpec = ua.search("\\(") !== -1;
+      const regexp = hasDeviceSpec ? regexpWithDeviceSpec : regexpWithoutDeviceSpec;
+      return {
+        name: Utils.getFirstMatch(regexp, ua),
+        version: Utils.getSecondMatch(regexp, ua)
+      };
+    }
+  }
+];
+var parser_browsers_default = browsersList;
+
+// node_modules/bowser/src/parser-os.js
+var parser_os_default = [
+  {
+    test: [/Roku\/DVP/],
+    describe(ua) {
+      const version36 = Utils.getFirstMatch(/Roku\/DVP-(\d+\.\d+)/i, ua);
+      return {
+        name: OS_MAP.Roku,
+        version: version36
+      };
+    }
+  },
+  {
+    test: [/windows phone/i],
+    describe(ua) {
+      const version36 = Utils.getFirstMatch(/windows phone (?:os)?\s?(\d+(\.\d+)*)/i, ua);
+      return {
+        name: OS_MAP.WindowsPhone,
+        version: version36
+      };
+    }
+  },
+  {
+    test: [/windows /i],
+    describe(ua) {
+      const version36 = Utils.getFirstMatch(/Windows ((NT|XP)( \d\d?.\d)?)/i, ua);
+      const versionName = Utils.getWindowsVersionName(version36);
+      return {
+        name: OS_MAP.Windows,
+        version: version36,
+        versionName
+      };
+    }
+  },
+  {
+    test: [/Macintosh(.*?) FxiOS(.*?)\//],
+    describe(ua) {
+      const result = {
+        name: OS_MAP.iOS
+      };
+      const version36 = Utils.getSecondMatch(/(Version\/)(\d[\d.]+)/, ua);
+      if (version36) {
+        result.version = version36;
+      }
+      return result;
+    }
+  },
+  {
+    test: [/macintosh/i],
+    describe(ua) {
+      const version36 = Utils.getFirstMatch(/mac os x (\d+(\.?_?\d+)+)/i, ua).replace(/[_\s]/g, ".");
+      const versionName = Utils.getMacOSVersionName(version36);
+      const os = {
+        name: OS_MAP.MacOS,
+        version: version36
+      };
+      if (versionName) {
+        os.versionName = versionName;
+      }
+      return os;
+    }
+  },
+  {
+    test: [/(ipod|iphone|ipad)/i],
+    describe(ua) {
+      const version36 = Utils.getFirstMatch(/os (\d+([_\s]\d+)*) like mac os x/i, ua).replace(/[_\s]/g, ".");
+      return {
+        name: OS_MAP.iOS,
+        version: version36
+      };
+    }
+  },
+  {
+    test(parser) {
+      const notLikeAndroid = !parser.test(/like android/i);
+      const butAndroid = parser.test(/android/i);
+      return notLikeAndroid && butAndroid;
+    },
+    describe(ua) {
+      const version36 = Utils.getFirstMatch(/android[\s/-](\d+(\.\d+)*)/i, ua);
+      const versionName = Utils.getAndroidVersionName(version36);
+      const os = {
+        name: OS_MAP.Android,
+        version: version36
+      };
+      if (versionName) {
+        os.versionName = versionName;
+      }
+      return os;
+    }
+  },
+  {
+    test: [/(web|hpw)[o0]s/i],
+    describe(ua) {
+      const version36 = Utils.getFirstMatch(/(?:web|hpw)[o0]s\/(\d+(\.\d+)*)/i, ua);
+      const os = {
+        name: OS_MAP.WebOS
+      };
+      if (version36 && version36.length) {
+        os.version = version36;
+      }
+      return os;
+    }
+  },
+  {
+    test: [/blackberry|\bbb\d+/i, /rim\stablet/i],
+    describe(ua) {
+      const version36 = Utils.getFirstMatch(/rim\stablet\sos\s(\d+(\.\d+)*)/i, ua) || Utils.getFirstMatch(/blackberry\d+\/(\d+([_\s]\d+)*)/i, ua) || Utils.getFirstMatch(/\bbb(\d+)/i, ua);
+      return {
+        name: OS_MAP.BlackBerry,
+        version: version36
+      };
+    }
+  },
+  {
+    test: [/bada/i],
+    describe(ua) {
+      const version36 = Utils.getFirstMatch(/bada\/(\d+(\.\d+)*)/i, ua);
+      return {
+        name: OS_MAP.Bada,
+        version: version36
+      };
+    }
+  },
+  {
+    test: [/tizen/i],
+    describe(ua) {
+      const version36 = Utils.getFirstMatch(/tizen[/\s](\d+(\.\d+)*)/i, ua);
+      return {
+        name: OS_MAP.Tizen,
+        version: version36
+      };
+    }
+  },
+  {
+    test: [/linux/i],
+    describe() {
+      return {
+        name: OS_MAP.Linux
+      };
+    }
+  },
+  {
+    test: [/CrOS/],
+    describe() {
+      return {
+        name: OS_MAP.ChromeOS
+      };
+    }
+  },
+  {
+    test: [/PlayStation 4/],
+    describe(ua) {
+      const version36 = Utils.getFirstMatch(/PlayStation 4[/\s](\d+(\.\d+)*)/i, ua);
+      return {
+        name: OS_MAP.PlayStation4,
+        version: version36
+      };
+    }
+  }
+];
+
+// node_modules/bowser/src/parser-platforms.js
+var parser_platforms_default = [
+  {
+    test: [/googlebot/i],
+    describe() {
+      return {
+        type: "bot",
+        vendor: "Google"
+      };
+    }
+  },
+  {
+    test: [/huawei/i],
+    describe(ua) {
+      const model = Utils.getFirstMatch(/(can-l01)/i, ua) && "Nova";
+      const platform = {
+        type: PLATFORMS_MAP.mobile,
+        vendor: "Huawei"
+      };
+      if (model) {
+        platform.model = model;
+      }
+      return platform;
+    }
+  },
+  {
+    test: [/nexus\s*(?:7|8|9|10).*/i],
+    describe() {
+      return {
+        type: PLATFORMS_MAP.tablet,
+        vendor: "Nexus"
+      };
+    }
+  },
+  {
+    test: [/ipad/i],
+    describe() {
+      return {
+        type: PLATFORMS_MAP.tablet,
+        vendor: "Apple",
+        model: "iPad"
+      };
+    }
+  },
+  {
+    test: [/Macintosh(.*?) FxiOS(.*?)\//],
+    describe() {
+      return {
+        type: PLATFORMS_MAP.tablet,
+        vendor: "Apple",
+        model: "iPad"
+      };
+    }
+  },
+  {
+    test: [/kftt build/i],
+    describe() {
+      return {
+        type: PLATFORMS_MAP.tablet,
+        vendor: "Amazon",
+        model: "Kindle Fire HD 7"
+      };
+    }
+  },
+  {
+    test: [/silk/i],
+    describe() {
+      return {
+        type: PLATFORMS_MAP.tablet,
+        vendor: "Amazon"
+      };
+    }
+  },
+  {
+    test: [/tablet(?! pc)/i],
+    describe() {
+      return {
+        type: PLATFORMS_MAP.tablet
+      };
+    }
+  },
+  {
+    test(parser) {
+      const iDevice = parser.test(/ipod|iphone/i);
+      const likeIDevice = parser.test(/like (ipod|iphone)/i);
+      return iDevice && !likeIDevice;
+    },
+    describe(ua) {
+      const model = Utils.getFirstMatch(/(ipod|iphone)/i, ua);
+      return {
+        type: PLATFORMS_MAP.mobile,
+        vendor: "Apple",
+        model
+      };
+    }
+  },
+  {
+    test: [/nexus\s*[0-6].*/i, /galaxy nexus/i],
+    describe() {
+      return {
+        type: PLATFORMS_MAP.mobile,
+        vendor: "Nexus"
+      };
+    }
+  },
+  {
+    test: [/[^-]mobi/i],
+    describe() {
+      return {
+        type: PLATFORMS_MAP.mobile
+      };
+    }
+  },
+  {
+    test(parser) {
+      return parser.getBrowserName(true) === "blackberry";
+    },
+    describe() {
+      return {
+        type: PLATFORMS_MAP.mobile,
+        vendor: "BlackBerry"
+      };
+    }
+  },
+  {
+    test(parser) {
+      return parser.getBrowserName(true) === "bada";
+    },
+    describe() {
+      return {
+        type: PLATFORMS_MAP.mobile
+      };
+    }
+  },
+  {
+    test(parser) {
+      return parser.getBrowserName() === "windows phone";
+    },
+    describe() {
+      return {
+        type: PLATFORMS_MAP.mobile,
+        vendor: "Microsoft"
+      };
+    }
+  },
+  {
+    test(parser) {
+      const osMajorVersion = Number(String(parser.getOSVersion()).split(".")[0]);
+      return parser.getOSName(true) === "android" && osMajorVersion >= 3;
+    },
+    describe() {
+      return {
+        type: PLATFORMS_MAP.tablet
+      };
+    }
+  },
+  {
+    test(parser) {
+      return parser.getOSName(true) === "android";
+    },
+    describe() {
+      return {
+        type: PLATFORMS_MAP.mobile
+      };
+    }
+  },
+  {
+    test(parser) {
+      return parser.getOSName(true) === "macos";
+    },
+    describe() {
+      return {
+        type: PLATFORMS_MAP.desktop,
+        vendor: "Apple"
+      };
+    }
+  },
+  {
+    test(parser) {
+      return parser.getOSName(true) === "windows";
+    },
+    describe() {
+      return {
+        type: PLATFORMS_MAP.desktop
+      };
+    }
+  },
+  {
+    test(parser) {
+      return parser.getOSName(true) === "linux";
+    },
+    describe() {
+      return {
+        type: PLATFORMS_MAP.desktop
+      };
+    }
+  },
+  {
+    test(parser) {
+      return parser.getOSName(true) === "playstation 4";
+    },
+    describe() {
+      return {
+        type: PLATFORMS_MAP.tv
+      };
+    }
+  },
+  {
+    test(parser) {
+      return parser.getOSName(true) === "roku";
+    },
+    describe() {
+      return {
+        type: PLATFORMS_MAP.tv
+      };
+    }
+  }
+];
+
+// node_modules/bowser/src/parser-engines.js
+var parser_engines_default = [
+  {
+    test(parser) {
+      return parser.getBrowserName(true) === "microsoft edge";
+    },
+    describe(ua) {
+      const isBlinkBased = /\sedg\//i.test(ua);
+      if (isBlinkBased) {
+        return {
+          name: ENGINE_MAP.Blink
+        };
+      }
+      const version36 = Utils.getFirstMatch(/edge\/(\d+(\.?_?\d+)+)/i, ua);
+      return {
+        name: ENGINE_MAP.EdgeHTML,
+        version: version36
+      };
+    }
+  },
+  {
+    test: [/trident/i],
+    describe(ua) {
+      const engine = {
+        name: ENGINE_MAP.Trident
+      };
+      const version36 = Utils.getFirstMatch(/trident\/(\d+(\.?_?\d+)+)/i, ua);
+      if (version36) {
+        engine.version = version36;
+      }
+      return engine;
+    }
+  },
+  {
+    test(parser) {
+      return parser.test(/presto/i);
+    },
+    describe(ua) {
+      const engine = {
+        name: ENGINE_MAP.Presto
+      };
+      const version36 = Utils.getFirstMatch(/presto\/(\d+(\.?_?\d+)+)/i, ua);
+      if (version36) {
+        engine.version = version36;
+      }
+      return engine;
+    }
+  },
+  {
+    test(parser) {
+      const isGecko = parser.test(/gecko/i);
+      const likeGecko = parser.test(/like gecko/i);
+      return isGecko && !likeGecko;
+    },
+    describe(ua) {
+      const engine = {
+        name: ENGINE_MAP.Gecko
+      };
+      const version36 = Utils.getFirstMatch(/gecko\/(\d+(\.?_?\d+)+)/i, ua);
+      if (version36) {
+        engine.version = version36;
+      }
+      return engine;
+    }
+  },
+  {
+    test: [/(apple)?webkit\/537\.36/i],
+    describe() {
+      return {
+        name: ENGINE_MAP.Blink
+      };
+    }
+  },
+  {
+    test: [/(apple)?webkit/i],
+    describe(ua) {
+      const engine = {
+        name: ENGINE_MAP.WebKit
+      };
+      const version36 = Utils.getFirstMatch(/webkit\/(\d+(\.?_?\d+)+)/i, ua);
+      if (version36) {
+        engine.version = version36;
+      }
+      return engine;
+    }
+  }
+];
+
+// node_modules/bowser/src/parser.js
+var Parser = class {
+  constructor(UA, skipParsing = false) {
+    if (UA === void 0 || UA === null || UA === "") {
+      throw new Error("UserAgent parameter can't be empty");
+    }
+    this._ua = UA;
+    this.parsedResult = {};
+    if (skipParsing !== true) {
+      this.parse();
+    }
+  }
+  getUA() {
+    return this._ua;
+  }
+  test(regex) {
+    return regex.test(this._ua);
+  }
+  parseBrowser() {
+    this.parsedResult.browser = {};
+    const browserDescriptor = Utils.find(parser_browsers_default, (_browser) => {
+      if (typeof _browser.test === "function") {
+        return _browser.test(this);
+      }
+      if (_browser.test instanceof Array) {
+        return _browser.test.some((condition) => this.test(condition));
+      }
+      throw new Error("Browser's test function is not valid");
+    });
+    if (browserDescriptor) {
+      this.parsedResult.browser = browserDescriptor.describe(this.getUA());
+    }
+    return this.parsedResult.browser;
+  }
+  getBrowser() {
+    if (this.parsedResult.browser) {
+      return this.parsedResult.browser;
+    }
+    return this.parseBrowser();
+  }
+  getBrowserName(toLowerCase) {
+    if (toLowerCase) {
+      return String(this.getBrowser().name).toLowerCase() || "";
+    }
+    return this.getBrowser().name || "";
+  }
+  getBrowserVersion() {
+    return this.getBrowser().version;
+  }
+  getOS() {
+    if (this.parsedResult.os) {
+      return this.parsedResult.os;
+    }
+    return this.parseOS();
+  }
+  parseOS() {
+    this.parsedResult.os = {};
+    const os = Utils.find(parser_os_default, (_os) => {
+      if (typeof _os.test === "function") {
+        return _os.test(this);
+      }
+      if (_os.test instanceof Array) {
+        return _os.test.some((condition) => this.test(condition));
+      }
+      throw new Error("Browser's test function is not valid");
+    });
+    if (os) {
+      this.parsedResult.os = os.describe(this.getUA());
+    }
+    return this.parsedResult.os;
+  }
+  getOSName(toLowerCase) {
+    const { name: name2 } = this.getOS();
+    if (toLowerCase) {
+      return String(name2).toLowerCase() || "";
+    }
+    return name2 || "";
+  }
+  getOSVersion() {
+    return this.getOS().version;
+  }
+  getPlatform() {
+    if (this.parsedResult.platform) {
+      return this.parsedResult.platform;
+    }
+    return this.parsePlatform();
+  }
+  getPlatformType(toLowerCase = false) {
+    const { type } = this.getPlatform();
+    if (toLowerCase) {
+      return String(type).toLowerCase() || "";
+    }
+    return type || "";
+  }
+  parsePlatform() {
+    this.parsedResult.platform = {};
+    const platform = Utils.find(parser_platforms_default, (_platform) => {
+      if (typeof _platform.test === "function") {
+        return _platform.test(this);
+      }
+      if (_platform.test instanceof Array) {
+        return _platform.test.some((condition) => this.test(condition));
+      }
+      throw new Error("Browser's test function is not valid");
+    });
+    if (platform) {
+      this.parsedResult.platform = platform.describe(this.getUA());
+    }
+    return this.parsedResult.platform;
+  }
+  getEngine() {
+    if (this.parsedResult.engine) {
+      return this.parsedResult.engine;
+    }
+    return this.parseEngine();
+  }
+  getEngineName(toLowerCase) {
+    if (toLowerCase) {
+      return String(this.getEngine().name).toLowerCase() || "";
+    }
+    return this.getEngine().name || "";
+  }
+  parseEngine() {
+    this.parsedResult.engine = {};
+    const engine = Utils.find(parser_engines_default, (_engine) => {
+      if (typeof _engine.test === "function") {
+        return _engine.test(this);
+      }
+      if (_engine.test instanceof Array) {
+        return _engine.test.some((condition) => this.test(condition));
+      }
+      throw new Error("Browser's test function is not valid");
+    });
+    if (engine) {
+      this.parsedResult.engine = engine.describe(this.getUA());
+    }
+    return this.parsedResult.engine;
+  }
+  parse() {
+    this.parseBrowser();
+    this.parseOS();
+    this.parsePlatform();
+    this.parseEngine();
+    return this;
+  }
+  getResult() {
+    return Utils.assign({}, this.parsedResult);
+  }
+  satisfies(checkTree) {
+    const platformsAndOSes = {};
+    let platformsAndOSCounter = 0;
+    const browsers = {};
+    let browsersCounter = 0;
+    const allDefinitions = Object.keys(checkTree);
+    allDefinitions.forEach((key2) => {
+      const currentDefinition = checkTree[key2];
+      if (typeof currentDefinition === "string") {
+        browsers[key2] = currentDefinition;
+        browsersCounter += 1;
+      } else if (typeof currentDefinition === "object") {
+        platformsAndOSes[key2] = currentDefinition;
+        platformsAndOSCounter += 1;
+      }
+    });
+    if (platformsAndOSCounter > 0) {
+      const platformsAndOSNames = Object.keys(platformsAndOSes);
+      const OSMatchingDefinition = Utils.find(platformsAndOSNames, (name2) => this.isOS(name2));
+      if (OSMatchingDefinition) {
+        const osResult = this.satisfies(platformsAndOSes[OSMatchingDefinition]);
+        if (osResult !== void 0) {
+          return osResult;
+        }
+      }
+      const platformMatchingDefinition = Utils.find(
+        platformsAndOSNames,
+        (name2) => this.isPlatform(name2)
+      );
+      if (platformMatchingDefinition) {
+        const platformResult = this.satisfies(platformsAndOSes[platformMatchingDefinition]);
+        if (platformResult !== void 0) {
+          return platformResult;
+        }
+      }
+    }
+    if (browsersCounter > 0) {
+      const browserNames = Object.keys(browsers);
+      const matchingDefinition = Utils.find(browserNames, (name2) => this.isBrowser(name2, true));
+      if (matchingDefinition !== void 0) {
+        return this.compareVersion(browsers[matchingDefinition]);
+      }
+    }
+    return void 0;
+  }
+  isBrowser(browserName, includingAlias = false) {
+    const defaultBrowserName = this.getBrowserName().toLowerCase();
+    let browserNameLower = browserName.toLowerCase();
+    const alias = Utils.getBrowserTypeByAlias(browserNameLower);
+    if (includingAlias && alias) {
+      browserNameLower = alias.toLowerCase();
+    }
+    return browserNameLower === defaultBrowserName;
+  }
+  compareVersion(version36) {
+    let expectedResults = [0];
+    let comparableVersion = version36;
+    let isLoose = false;
+    const currentBrowserVersion = this.getBrowserVersion();
+    if (typeof currentBrowserVersion !== "string") {
+      return void 0;
+    }
+    if (version36[0] === ">" || version36[0] === "<") {
+      comparableVersion = version36.substr(1);
+      if (version36[1] === "=") {
+        isLoose = true;
+        comparableVersion = version36.substr(2);
+      } else {
+        expectedResults = [];
+      }
+      if (version36[0] === ">") {
+        expectedResults.push(1);
+      } else {
+        expectedResults.push(-1);
+      }
+    } else if (version36[0] === "=") {
+      comparableVersion = version36.substr(1);
+    } else if (version36[0] === "~") {
+      isLoose = true;
+      comparableVersion = version36.substr(1);
+    }
+    return expectedResults.indexOf(
+      Utils.compareVersions(currentBrowserVersion, comparableVersion, isLoose)
+    ) > -1;
+  }
+  isOS(osName) {
+    return this.getOSName(true) === String(osName).toLowerCase();
+  }
+  isPlatform(platformType) {
+    return this.getPlatformType(true) === String(platformType).toLowerCase();
+  }
+  isEngine(engineName) {
+    return this.getEngineName(true) === String(engineName).toLowerCase();
+  }
+  is(anything, includingAlias = false) {
+    return this.isBrowser(anything, includingAlias) || this.isOS(anything) || this.isPlatform(anything);
+  }
+  some(anythings = []) {
+    return anythings.some((anything) => this.is(anything));
+  }
+};
+var parser_default = Parser;
+
+// node_modules/bowser/src/bowser.js
+var Bowser = class {
+  static getParser(UA, skipParsing = false) {
+    if (typeof UA !== "string") {
+      throw new Error("UserAgent should be a string");
+    }
+    return new parser_default(UA, skipParsing);
+  }
+  static parse(UA) {
+    return new parser_default(UA).getResult();
+  }
+  static get BROWSER_MAP() {
+    return BROWSER_MAP;
+  }
+  static get ENGINE_MAP() {
+    return ENGINE_MAP;
+  }
+  static get OS_MAP() {
+    return OS_MAP;
+  }
+  static get PLATFORMS_MAP() {
+    return PLATFORMS_MAP;
+  }
+};
+var bowser_default = Bowser;
+
 // node_modules/svelte/internal/index.mjs
 function noop2() {
 }
@@ -33069,8 +34677,8 @@ if (REGEX_SUPPORTS_U_AND_Y) {
   };
 }
 var IDENTIFIER_PREFIX_RE_1;
-var Parser = function() {
-  function Parser2(message, options) {
+var Parser2 = function() {
+  function Parser3(message, options) {
     if (options === void 0) {
       options = {};
     }
@@ -33081,13 +34689,13 @@ var Parser = function() {
     this.requiresOtherClause = !!options.requiresOtherClause;
     this.shouldParseSkeletons = !!options.shouldParseSkeletons;
   }
-  Parser2.prototype.parse = function() {
+  Parser3.prototype.parse = function() {
     if (this.offset() !== 0) {
       throw Error("parser can only be used once");
     }
     return this.parseMessage(0, "", false);
   };
-  Parser2.prototype.parseMessage = function(nestingLevel, parentArgType, expectingCloseTag) {
+  Parser3.prototype.parseMessage = function(nestingLevel, parentArgType, expectingCloseTag) {
     var elements = [];
     while (!this.isEOF()) {
       var char = this.char();
@@ -33128,7 +34736,7 @@ var Parser = function() {
     }
     return { val: elements, err: null };
   };
-  Parser2.prototype.parseTag = function(nestingLevel, parentArgType) {
+  Parser3.prototype.parseTag = function(nestingLevel, parentArgType) {
     var startPosition = this.clonePosition();
     this.bump();
     var tagName = this.parseTagName();
@@ -33178,7 +34786,7 @@ var Parser = function() {
       return this.error(ErrorKind.INVALID_TAG, createLocation(startPosition, this.clonePosition()));
     }
   };
-  Parser2.prototype.parseTagName = function() {
+  Parser3.prototype.parseTagName = function() {
     var startOffset = this.offset();
     this.bump();
     while (!this.isEOF() && _isPotentialElementNameChar(this.char())) {
@@ -33186,7 +34794,7 @@ var Parser = function() {
     }
     return this.message.slice(startOffset, this.offset());
   };
-  Parser2.prototype.parseLiteral = function(nestingLevel, parentArgType) {
+  Parser3.prototype.parseLiteral = function(nestingLevel, parentArgType) {
     var start = this.clonePosition();
     var value = "";
     while (true) {
@@ -33213,14 +34821,14 @@ var Parser = function() {
       err: null
     };
   };
-  Parser2.prototype.tryParseLeftAngleBracket = function() {
+  Parser3.prototype.tryParseLeftAngleBracket = function() {
     if (!this.isEOF() && this.char() === 60 && (this.ignoreTag || !_isAlphaOrSlash(this.peek() || 0))) {
       this.bump();
       return "<";
     }
     return null;
   };
-  Parser2.prototype.tryParseQuote = function(parentArgType) {
+  Parser3.prototype.tryParseQuote = function(parentArgType) {
     if (this.isEOF() || this.char() !== 39) {
       return null;
     }
@@ -33262,7 +34870,7 @@ var Parser = function() {
     }
     return fromCodePoint.apply(void 0, codePoints);
   };
-  Parser2.prototype.tryParseUnquoted = function(nestingLevel, parentArgType) {
+  Parser3.prototype.tryParseUnquoted = function(nestingLevel, parentArgType) {
     if (this.isEOF()) {
       return null;
     }
@@ -33274,7 +34882,7 @@ var Parser = function() {
       return fromCodePoint(ch);
     }
   };
-  Parser2.prototype.parseArgument = function(nestingLevel, expectingCloseTag) {
+  Parser3.prototype.parseArgument = function(nestingLevel, expectingCloseTag) {
     var openingBracePosition = this.clonePosition();
     this.bump();
     this.bumpSpace();
@@ -33317,7 +34925,7 @@ var Parser = function() {
         return this.error(ErrorKind.MALFORMED_ARGUMENT, createLocation(openingBracePosition, this.clonePosition()));
     }
   };
-  Parser2.prototype.parseIdentifierIfPossible = function() {
+  Parser3.prototype.parseIdentifierIfPossible = function() {
     var startingPosition = this.clonePosition();
     var startOffset = this.offset();
     var value = matchIdentifierAtIndex(this.message, startOffset);
@@ -33327,7 +34935,7 @@ var Parser = function() {
     var location = createLocation(startingPosition, endPosition);
     return { value, location };
   };
-  Parser2.prototype.parseArgumentOptions = function(nestingLevel, expectingCloseTag, value, openingBracePosition) {
+  Parser3.prototype.parseArgumentOptions = function(nestingLevel, expectingCloseTag, value, openingBracePosition) {
     var _a2;
     var typeStartPosition = this.clonePosition();
     var argType = this.parseIdentifierIfPossible().value;
@@ -33462,14 +35070,14 @@ var Parser = function() {
         return this.error(ErrorKind.INVALID_ARGUMENT_TYPE, createLocation(typeStartPosition, typeEndPosition));
     }
   };
-  Parser2.prototype.tryParseArgumentClose = function(openingBracePosition) {
+  Parser3.prototype.tryParseArgumentClose = function(openingBracePosition) {
     if (this.isEOF() || this.char() !== 125) {
       return this.error(ErrorKind.EXPECT_ARGUMENT_CLOSING_BRACE, createLocation(openingBracePosition, this.clonePosition()));
     }
     this.bump();
     return { val: true, err: null };
   };
-  Parser2.prototype.parseSimpleArgStyleIfPossible = function() {
+  Parser3.prototype.parseSimpleArgStyleIfPossible = function() {
     var nestedBraces = 0;
     var startPosition = this.clonePosition();
     while (!this.isEOF()) {
@@ -33510,7 +35118,7 @@ var Parser = function() {
       err: null
     };
   };
-  Parser2.prototype.parseNumberSkeletonFromString = function(skeleton, location) {
+  Parser3.prototype.parseNumberSkeletonFromString = function(skeleton, location) {
     var tokens = [];
     try {
       tokens = parseNumberSkeletonFromString(skeleton);
@@ -33527,7 +35135,7 @@ var Parser = function() {
       err: null
     };
   };
-  Parser2.prototype.tryParsePluralOrSelectOptions = function(nestingLevel, parentArgType, expectCloseTag, parsedFirstIdentifier) {
+  Parser3.prototype.tryParsePluralOrSelectOptions = function(nestingLevel, parentArgType, expectCloseTag, parsedFirstIdentifier) {
     var _a2;
     var hasOtherClause = false;
     var options = [];
@@ -33585,7 +35193,7 @@ var Parser = function() {
     }
     return { val: options, err: null };
   };
-  Parser2.prototype.tryParseDecimalInteger = function(expectNumberError, invalidNumberError) {
+  Parser3.prototype.tryParseDecimalInteger = function(expectNumberError, invalidNumberError) {
     var sign3 = 1;
     var startingPosition = this.clonePosition();
     if (this.bumpIf("+")) {
@@ -33614,20 +35222,20 @@ var Parser = function() {
     }
     return { val: decimal, err: null };
   };
-  Parser2.prototype.offset = function() {
+  Parser3.prototype.offset = function() {
     return this.position.offset;
   };
-  Parser2.prototype.isEOF = function() {
+  Parser3.prototype.isEOF = function() {
     return this.offset() === this.message.length;
   };
-  Parser2.prototype.clonePosition = function() {
+  Parser3.prototype.clonePosition = function() {
     return {
       offset: this.position.offset,
       line: this.position.line,
       column: this.position.column
     };
   };
-  Parser2.prototype.char = function() {
+  Parser3.prototype.char = function() {
     var offset = this.position.offset;
     if (offset >= this.message.length) {
       throw Error("out of bound");
@@ -33638,7 +35246,7 @@ var Parser = function() {
     }
     return code;
   };
-  Parser2.prototype.error = function(kind, location) {
+  Parser3.prototype.error = function(kind, location) {
     return {
       val: null,
       err: {
@@ -33648,7 +35256,7 @@ var Parser = function() {
       }
     };
   };
-  Parser2.prototype.bump = function() {
+  Parser3.prototype.bump = function() {
     if (this.isEOF()) {
       return;
     }
@@ -33662,7 +35270,7 @@ var Parser = function() {
       this.position.offset += code < 65536 ? 1 : 2;
     }
   };
-  Parser2.prototype.bumpIf = function(prefix) {
+  Parser3.prototype.bumpIf = function(prefix) {
     if (startsWith(this.message, prefix, this.offset())) {
       for (var i2 = 0; i2 < prefix.length; i2++) {
         this.bump();
@@ -33671,7 +35279,7 @@ var Parser = function() {
     }
     return false;
   };
-  Parser2.prototype.bumpUntil = function(pattern) {
+  Parser3.prototype.bumpUntil = function(pattern) {
     var currentOffset = this.offset();
     var index = this.message.indexOf(pattern, currentOffset);
     if (index >= 0) {
@@ -33682,7 +35290,7 @@ var Parser = function() {
       return false;
     }
   };
-  Parser2.prototype.bumpTo = function(targetOffset) {
+  Parser3.prototype.bumpTo = function(targetOffset) {
     if (this.offset() > targetOffset) {
       throw Error("targetOffset ".concat(targetOffset, " must be greater than or equal to the current offset ").concat(this.offset()));
     }
@@ -33701,12 +35309,12 @@ var Parser = function() {
       }
     }
   };
-  Parser2.prototype.bumpSpace = function() {
+  Parser3.prototype.bumpSpace = function() {
     while (!this.isEOF() && _isWhiteSpace(this.char())) {
       this.bump();
     }
   };
-  Parser2.prototype.peek = function() {
+  Parser3.prototype.peek = function() {
     if (this.isEOF()) {
       return null;
     }
@@ -33715,7 +35323,7 @@ var Parser = function() {
     var nextCode = this.message.charCodeAt(offset + (code >= 65536 ? 2 : 1));
     return nextCode !== null && nextCode !== void 0 ? nextCode : null;
   };
-  return Parser2;
+  return Parser3;
 }();
 function _isAlpha(codepoint) {
   return codepoint >= 97 && codepoint <= 122 || codepoint >= 65 && codepoint <= 90;
@@ -33756,7 +35364,7 @@ function parse(message, opts) {
     opts = {};
   }
   opts = __assign({ shouldParseSkeletons: true, requiresOtherClause: true }, opts);
-  var result = new Parser(message, opts).parse();
+  var result = new Parser2(message, opts).parse();
   if (result.err) {
     var error = SyntaxError(ErrorKind[result.err.kind]);
     error.location = result.err.location;
@@ -58068,8 +59676,8 @@ function instance($$self, $$props, $$invalidate) {
         left: var(--${targetComponentVariable}-position-left, 0);`
     };
   };
-  const accountCenterComponent = $accountCenter$.enabled ? import("./Index-db6b756b-Z7W7N5Y3.js").then((mod) => mod.default) : Promise.resolve(null);
-  const notifyComponent = $notify$.enabled ? import("./Index-8c4d77e6-XO3IC6FP.js").then((mod) => mod.default) : Promise.resolve(null);
+  const accountCenterComponent = $accountCenter$.enabled ? import("./Index-db6b756b-FHTJIWFQ.js").then((mod) => mod.default) : Promise.resolve(null);
+  const notifyComponent = $notify$.enabled ? import("./Index-8c4d77e6-FRTQWGGD.js").then((mod) => mod.default) : Promise.resolve(null);
   const accountCenterMountToElement = $accountCenter$.enabled && containerElements2 && containerElements2.accountCenter;
   const attachCompToDom = (domEl, targetEl, component, compSettings) => {
     const target = domEl.attachShadow({ mode: "open" });
@@ -58626,4 +60234,10 @@ export {
   WalletAppBadge,
   init2 as init
 };
-//# sourceMappingURL=chunk-VULQFW3P.js.map
+/*!
+ * Bowser - a browser detector
+ * https://github.com/lancedikson/bowser
+ * MIT License | (c) Dustin Diaz 2012-2015
+ * MIT License | (c) Denis Demchenko 2015-2019
+ */
+//# sourceMappingURL=chunk-JCO65AIX.js.map

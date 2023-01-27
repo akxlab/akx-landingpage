@@ -8,6 +8,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@dargmuesli/nuxt-cookie-control": "^3.0.0",
     "@nuxtjs/i18n": "^8.0.0-beta.7",
     "@types/gsap": "^3.0.0",
     "@types/three": "^0.139.0",
@@ -23,6 +24,7 @@
     "@esbuild-plugins/node-globals-polyfill": "^0.1.1",
     "@esbuild-plugins/node-modules-polyfill": "^0.1.4",
     "@metamask/onboarding": "^1.0.1",
+    "@paypal/paypal-js": "^5.1.4",
     "@pinia/nuxt": "^0.4.6",
     "@vueuse/core": "^9.11.1",
     "@vueuse/nuxt": "^9.11.0",
@@ -31,7 +33,9 @@
     "@web3-onboard/vue": "^2.5.0",
     "ethers": "^5.7.2",
     "js-cookie": "^3.0.1",
+    "nuxt-csurf": "^1.0.1",
     "nuxt-font-loader": "^2.2.2",
+    "nuxt-lazy-hydrate": "^0.1.0",
     "pinia-plugin-persist": "^1.0.0",
     "rollup-plugin-polyfill-node": "^0.11.0",
     "sass": "^1.57.1",

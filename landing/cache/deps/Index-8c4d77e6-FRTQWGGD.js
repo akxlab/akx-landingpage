@@ -63,8 +63,7 @@ import {
   update_keyed_each,
   wallets$,
   x
-} from "./chunk-VULQFW3P.js";
-import "./chunk-U7SIKSNY.js";
+} from "./chunk-JCO65AIX.js";
 import {
   require_joi_browser_min
 } from "./chunk-MYILNTZI.js";
@@ -74,6 +73,7 @@ import "./chunk-S6BB4OWC.js";
 import "./chunk-LUAEQXGQ.js";
 import "./chunk-NEUIYBRM.js";
 import "./chunk-RRF6SA7V.js";
+import "./chunk-ZZSVE7H3.js";
 import {
   __toESM
 } from "./chunk-IJ7IQSKN.js";
@@ -1393,4 +1393,4 @@ var Index = class extends SvelteComponent {
 export {
   Index as default
 };
-//# sourceMappingURL=Index-8c4d77e6-XO3IC6FP.js.map
+//# sourceMappingURL=Index-8c4d77e6-FRTQWGGD.js.map

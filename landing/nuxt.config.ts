@@ -118,6 +118,9 @@ export default defineNuxtConfig({
 
     modules: [
         'nuxt-font-loader',
+        '@dargmuesli/nuxt-cookie-control',
+        'nuxt-csurf',
+        'nuxt-lazy-hydrate',
 
 
 
@@ -206,6 +209,17 @@ export default defineNuxtConfig({
             version: 3,
             siteKey: process.env.RECAPTCHA_SITE_KEY
         }
+    },
+    csurf: { // optional
+        https: true, // default true if in production
+        cookieKey: '__Akx3.com-csrf', // "__Host-csrf" if https is true otherwise just "csrf"
+        cookie: { // CookieSerializeOptions from unjs/cookie-es
+            path: '/',
+            httpOnly: true,
+            sameSite: 'strict'
+        },
+        methodsToProtect: ['POST', 'PUT', 'PATCH'], // the request methods we want CSRF protection for
+        encryptAlgorithm: 'aes-256-cbc'
     }
 
 

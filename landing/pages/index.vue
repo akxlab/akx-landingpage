@@ -22,5 +22,6 @@ const { t } = useI18n()
     <HomeSection2 />
   </v-container>
   <!--</v-container>-->
+  <CommonCookiebar />
 
 </template>

@@ -1,12 +1,12 @@
 import {
-  CopyShader
-} from "./chunk-YXRZRKSB.js";
-import {
   ShaderPass
 } from "./chunk-CBQNSZ4A.js";
 import {
   Pass
 } from "./chunk-SF6IFTWK.js";
+import {
+  CopyShader
+} from "./chunk-YXRZRKSB.js";
 import {
   BufferGeometry,
   Clock,
