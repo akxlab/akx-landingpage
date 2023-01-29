@@ -1,4 +1,4 @@
-import "./chunk-IJ7IQSKN.js";
+import "./chunk-LFBQMW2U.js";
 
 // node_modules/js-cookie/dist/js.cookie.mjs
 function assign(target) {
@@ -101,5 +101,9 @@ var js_cookie_default = api;
 export {
   js_cookie_default as default
 };
-/*! js-cookie v3.0.1 | MIT */
+/*! Bundled license information:
+
+js-cookie/dist/js.cookie.mjs:
+  (*! js-cookie v3.0.1 | MIT *)
+*/
 //# sourceMappingURL=js-cookie.js.map

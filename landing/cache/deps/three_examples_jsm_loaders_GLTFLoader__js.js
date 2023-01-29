@@ -62,8 +62,8 @@ import {
   Vector3,
   VectorKeyframeTrack,
   sRGBEncoding
-} from "./chunk-O66LVNQA.js";
-import "./chunk-IJ7IQSKN.js";
+} from "./chunk-VLC2R7KB.js";
+import "./chunk-LFBQMW2U.js";
 
 // node_modules/three/examples/jsm/loaders/GLTFLoader.js
 var GLTFLoader = class extends Loader {
@@ -1055,6 +1055,7 @@ var GLTFCubicSplineQuaternionInterpolant = class extends GLTFCubicSplineInterpol
 };
 var WEBGL_CONSTANTS = {
   FLOAT: 5126,
+  //FLOAT_MAT2: 35674,
   FLOAT_MAT3: 35675,
   FLOAT_MAT4: 35676,
   FLOAT_VEC2: 35664,
@@ -1121,6 +1122,8 @@ var PATH_PROPERTIES = {
 };
 var INTERPOLATION = {
   CUBICSPLINE: void 0,
+  // We use a custom interpolant (GLTFCubicSplineInterpolation) for CUBICSPLINE tracks. Each
+  // keyframe track will be initialized with a default interpolation type, then modified.
   LINEAR: InterpolateLinear,
   STEP: InterpolateDiscrete
 };
@@ -1320,6 +1323,9 @@ var GLTFParser = class {
       });
     }).catch(onError);
   }
+  /**
+   * Marks the special nodes/meshes in json for efficient parse.
+   */
   _markDefs() {
     const nodeDefs = this.json.nodes || [];
     const skinDefs = this.json.skins || [];
@@ -1343,6 +1349,15 @@ var GLTFParser = class {
       }
     }
   }
+  /**
+   * Counts references to shared node / Object3D resources. These resources
+   * can be reused, or "instantiated", at multiple nodes in the scene
+   * hierarchy. Mesh, Camera, and Light instances are instantiated and must
+   * be marked. Non-scenegraph resources (like Materials, Geometries, and
+   * Textures) can be reused directly and are not marked here.
+   *
+   * Example: CesiumMilkTruck sample model reuses "Wheel" meshes.
+   */
   _addNodeRef(cache, index) {
     if (index === void 0)
       return;
@@ -1351,6 +1366,7 @@ var GLTFParser = class {
     }
     cache.refs[index]++;
   }
+  /** Returns a reference to a shared resource, cloning it if necessary. */
   _getNodeRef(cache, index, object) {
     if (cache.refs[index] <= 1)
       return object;
@@ -1389,6 +1405,12 @@ var GLTFParser = class {
     }
     return pending;
   }
+  /**
+   * Requests the specified dependency asynchronously, with caching.
+   * @param {string} type
+   * @param {number} index
+   * @return {Promise<Object3D|Material|THREE.Texture|AnimationClip|ArrayBuffer|Object>}
+   */
   getDependency(type, index) {
     const cacheKey = type + ":" + index;
     let dependency = this.cache.get(cacheKey);
@@ -1442,6 +1464,11 @@ var GLTFParser = class {
     }
     return dependency;
   }
+  /**
+   * Requests all dependencies of the specified type asynchronously, with caching.
+   * @param {string} type
+   * @return {Promise<Array<Object>>}
+   */
   getDependencies(type) {
     let dependencies = this.cache.get(type);
     if (!dependencies) {
@@ -1454,6 +1481,11 @@ var GLTFParser = class {
     }
     return dependencies;
   }
+  /**
+   * Specification: https://github.com/KhronosGroup/glTF/blob/master/specification/2.0/README.md#buffers-and-buffer-views
+   * @param {number} bufferIndex
+   * @return {Promise<ArrayBuffer>}
+   */
   loadBuffer(bufferIndex) {
     const bufferDef = this.json.buffers[bufferIndex];
     const loader = this.fileLoader;
@@ -1470,6 +1502,11 @@ var GLTFParser = class {
       });
     });
   }
+  /**
+   * Specification: https://github.com/KhronosGroup/glTF/blob/master/specification/2.0/README.md#buffers-and-buffer-views
+   * @param {number} bufferViewIndex
+   * @return {Promise<ArrayBuffer>}
+   */
   loadBufferView(bufferViewIndex) {
     const bufferViewDef = this.json.bufferViews[bufferViewIndex];
     return this.getDependency("buffer", bufferViewDef.buffer).then(function(buffer) {
@@ -1478,6 +1515,11 @@ var GLTFParser = class {
       return buffer.slice(byteOffset, byteOffset + byteLength);
     });
   }
+  /**
+   * Specification: https://github.com/KhronosGroup/glTF/blob/master/specification/2.0/README.md#accessors
+   * @param {number} accessorIndex
+   * @return {Promise<BufferAttribute|InterleavedBufferAttribute>}
+   */
   loadAccessor(accessorIndex) {
     const parser = this;
     const json = this.json;
@@ -1549,6 +1591,11 @@ var GLTFParser = class {
       return bufferAttribute;
     });
   }
+  /**
+   * Specification: https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#textures
+   * @param {number} textureIndex
+   * @return {Promise<THREE.Texture>}
+   */
   loadTexture(textureIndex) {
     const json = this.json;
     const options = this.options;
@@ -1618,6 +1665,13 @@ var GLTFParser = class {
     this.textureCache[cacheKey] = promise;
     return promise;
   }
+  /**
+   * Asynchronously assigns a texture to the given material parameters.
+   * @param {Object} materialParams
+   * @param {string} mapName
+   * @param {Object} mapDef
+   * @return {Promise<Texture>}
+   */
   assignTexture(materialParams, mapName, mapDef) {
     const parser = this;
     return this.getDependency("texture", mapDef.index).then(function(texture) {
@@ -1636,6 +1690,14 @@ var GLTFParser = class {
       return texture;
     });
   }
+  /**
+   * Assigns final material to a Mesh, Line, or Points instance. The instance
+   * already has a material (generated from the glTF material options alone)
+   * but reuse of the same glTF material may require multiple threejs materials
+   * to accommodate different primitive types, defines, etc. New materials will
+   * be created if necessary, and reused from a cache.
+   * @param  {Object3D} mesh Mesh, Line, or Points instance.
+   */
   assignFinalMaterial(mesh) {
     const geometry = mesh.geometry;
     let material = mesh.material;
@@ -1701,6 +1763,11 @@ var GLTFParser = class {
   getMaterialType() {
     return MeshStandardMaterial;
   }
+  /**
+   * Specification: https://github.com/KhronosGroup/glTF/blob/master/specification/2.0/README.md#materials
+   * @param {number} materialIndex
+   * @return {Promise<Material>}
+   */
   loadMaterial(materialIndex) {
     const parser = this;
     const json = this.json;
@@ -1797,6 +1864,7 @@ var GLTFParser = class {
       return material;
     });
   }
+  /** When Object3D instances are targeted by animation, they need unique names. */
   createUniqueName(originalName) {
     const sanitizedName = PropertyBinding.sanitizeNodeName(originalName || "");
     let name = sanitizedName;
@@ -1806,6 +1874,14 @@ var GLTFParser = class {
     this.nodeNamesUsed[name] = true;
     return name;
   }
+  /**
+   * Specification: https://github.com/KhronosGroup/glTF/blob/master/specification/2.0/README.md#geometry
+   *
+   * Creates BufferGeometries from primitives.
+   *
+   * @param {Array<GLTF.Primitive>} primitives
+   * @return {Promise<Array<BufferGeometry>>}
+   */
   loadGeometries(primitives) {
     const parser = this;
     const extensions = this.extensions;
@@ -1835,6 +1911,11 @@ var GLTFParser = class {
     }
     return Promise.all(pending);
   }
+  /**
+   * Specification: https://github.com/KhronosGroup/glTF/blob/master/specification/2.0/README.md#meshes
+   * @param {number} meshIndex
+   * @return {Promise<Group|Mesh|SkinnedMesh>}
+   */
   loadMesh(meshIndex) {
     const parser = this;
     const json = this.json;
@@ -1904,6 +1985,11 @@ var GLTFParser = class {
       return group;
     });
   }
+  /**
+   * Specification: https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#cameras
+   * @param {number} cameraIndex
+   * @return {Promise<THREE.Camera>}
+   */
   loadCamera(cameraIndex) {
     let camera;
     const cameraDef = this.json.cameras[cameraIndex];
@@ -1922,6 +2008,11 @@ var GLTFParser = class {
     assignExtrasToUserData(camera, cameraDef);
     return Promise.resolve(camera);
   }
+  /**
+   * Specification: https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#skins
+   * @param {number} skinIndex
+   * @return {Promise<Object>}
+   */
   loadSkin(skinIndex) {
     const skinDef = this.json.skins[skinIndex];
     const skinEntry = { joints: skinDef.joints };
@@ -1933,6 +2024,11 @@ var GLTFParser = class {
       return skinEntry;
     });
   }
+  /**
+   * Specification: https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#animations
+   * @param {number} animationIndex
+   * @return {Promise<AnimationClip>}
+   */
   loadAnimation(animationIndex) {
     const json = this.json;
     const animationDef = json.animations[animationIndex];
@@ -2053,6 +2149,11 @@ var GLTFParser = class {
       return node;
     });
   }
+  /**
+   * Specification: https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#nodes-and-hierarchy
+   * @param {number} nodeIndex
+   * @return {Promise<Object3D>}
+   */
   loadNode(nodeIndex) {
     const json = this.json;
     const extensions = this.extensions;
@@ -2123,6 +2224,11 @@ var GLTFParser = class {
       return node;
     });
   }
+  /**
+   * Specification: https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#scenes
+   * @param {number} sceneIndex
+   * @return {Promise<Group>}
+   */
   loadScene(sceneIndex) {
     const json = this.json;
     const extensions = this.extensions;

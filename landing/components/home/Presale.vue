@@ -1,13 +1,18 @@
 <script lang="ts" setup>
-import {useI18n} from "#imports";
+import {onMounted, useI18n} from "#imports";
+import {useOrderStore} from "~/stores/order";
 
+const order = useOrderStore();
 
-
+onMounted(async () => {
+  await order.initBlankOrder({});
+})
 
 const { t } = useI18n()
 </script>
 
 <template>
+
   <v-card max-width="1600"  style="margin:0 auto;" class="pl-4 pr-4 pb-4 mt-1" color="transparent">
     <v-row>
       <v-col cols="12"  >

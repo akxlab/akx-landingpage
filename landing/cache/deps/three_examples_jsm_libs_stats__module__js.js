@@ -1,4 +1,4 @@
-import "./chunk-IJ7IQSKN.js";
+import "./chunk-LFBQMW2U.js";
 
 // node_modules/three/examples/jsm/libs/stats.module.js
 var Stats = function() {
@@ -52,6 +52,7 @@ var Stats = function() {
     update: function() {
       beginTime = this.end();
     },
+    // Backwards Compatibility
     domElement: container,
     setMode: showPanel
   };

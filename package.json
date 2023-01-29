@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "@nuxtjs/supabase": "^0.3.0"
+  }
+}

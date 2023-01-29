@@ -23,26 +23,7 @@ export default defineNuxtConfig({
                     name: 'twitter:card',
                     content: 'summary_large_image'
                 }
-               /* {
-                    hid: 'og:image',
-                    property: 'og:image',
-                    content: 'https://nuxtjs.org/preview.png'
-                },
-                {
-                    hid: 'og:image:secure_url',
-                    property: 'og:image:secure_url',
-                    content: 'https://nuxtjs.org/preview.png'
-                },
-                {
-                    hid: 'og:image:alt',
-                    property: 'og:image:alt',
-                    content: 'Nuxt'
-                },
-                {
-                    hid: 'twitter:image',
-                    name: 'twitter:image',
-                    content: 'https://nuxtjs.org/preview.png'
-                }*/
+
             ],
         }
     },
@@ -63,7 +44,7 @@ export default defineNuxtConfig({
 
 
         optimizeDeps: {
-            include: ['bn.js', 'js-sha3', 'hash.js', 'aes-js', 'scrypt-js', 'bech32', 'crypto','troisjs'],
+            include: ['bn.js', 'js-sha3', 'hash.js', 'aes-js', 'scrypt-js', 'bech32', 'crypto'],
             exclude: ['vuetify'],
 
 
@@ -73,6 +54,7 @@ export default defineNuxtConfig({
                     NodeGlobalsPolyfillPlugin({
                         process: false,
                         buffer: false,
+                        // @ts-ignore
                         http: true,
                         crypto: true,
 
@@ -94,6 +76,7 @@ export default defineNuxtConfig({
         },
         build: {
             rollupOptions: {
+                // @ts-ignore
                 plugins: [nodePolyfills({crypto: true, http: true})]
             },
             chunkSizeWarningLimit: 65534,
@@ -120,7 +103,8 @@ export default defineNuxtConfig({
         'nuxt-font-loader',
         '@dargmuesli/nuxt-cookie-control',
         'nuxt-csurf',
-        'nuxt-lazy-hydrate',
+        '@pinia-plugin-persistedstate/nuxt',
+        '@nuxtjs/supabase',
 
 
 
@@ -146,30 +130,30 @@ export default defineNuxtConfig({
     i18n: {
         locales: [
             {
-                code: 'english',
+                code: 'en',
                 file: 'en-US.json'
             },
             {
-                code: 'espanol',
-                file: 'es-MX.json'
+                code: 'es',
+                file: 'es-ES.json'
             },
             {
-                code: 'francais',
-                file: 'fr-CA.json'
+                code: 'fr',
+                file: 'fr-FR.json'
             }
         ],
-        defaultLocale: 'english',
+        defaultLocale: 'en',
         detectBrowserLanguage: {
             useCookie: false
         },
         langDir: 'i18n',
-        lazy: false,
+        lazy: true,
         vueI18n: {
             legacy: false,
-            defaultLocale: 'english',
+            defaultLocale: 'en',
             strategy: 'prefix_except_default',
-            locale: 'english',
-            fallbackLocale: 'english'
+            locale: 'en',
+            fallbackLocale: 'en'
         }
     },
     fontLoader: {
@@ -198,7 +182,7 @@ export default defineNuxtConfig({
     },
 
     plugins: [
-        '~/plugins/vuetify', '~/plugins/pinia-plugin-persist.client'
+        '~/plugins/vuetify'
     ],
     publicRuntimeConfig: {
         apiURL: process.env.API_URL,

@@ -2,31 +2,212 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eee07431-0dc3-4e16-ac64-d34aa0e286a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/landing/components/checkout/WithETH.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/components/checkout/WithMatics.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/components/checkout/WithPaypal.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/components/common/Cookiebar.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing/plugins/paypal.client.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/landing/components/common/RightBarOrder.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/landing/plugins/eventBus.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/landing/plugins/eventTracker.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/landing/server/api/order/create.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/landing/server/api/paypal/order.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/landing/server/api/paypal/token.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/landing/server/api/prices/akxeth.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/landing/server/api/prices/akxfiats.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/landing/server/api/token/buy.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/landing/server/api/token/currentPrice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/landing/server/api/token/totalsupply.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/landing/stores/order.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/landing/types/paypal.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/setupdb.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/order_items.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/order_table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/orders.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/landing/app.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/cache/deps/@metamask_onboarding.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/cache/deps/@metamask_onboarding.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/@intlify_shared.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/@intlify_shared.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/@web3-onboard_injected-wallets.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/@web3-onboard_injected-wallets.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/@web3-onboard_injected-wallets.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/@web3-onboard_injected-wallets.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landing/cache/deps/@web3-onboard_vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/@web3-onboard_vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/cache/deps/Index-8c4d77e6-XO3IC6FP.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/cache/deps/Index-8c4d77e6-XO3IC6FP.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/cache/deps/Index-db6b756b-Z7W7N5Y3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/cache/deps/Index-db6b756b-Z7W7N5Y3.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/@web3-onboard_vue.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/@web3-onboard_vue.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/Index-8c4d77e6-FRTQWGGD.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/Index-8c4d77e6-FRTQWGGD.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/Index-db6b756b-FHTJIWFQ.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/Index-db6b756b-FHTJIWFQ.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/landing/cache/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/_metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-U7SIKSNY.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-U7SIKSNY.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-VULQFW3P.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-VULQFW3P.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/aes-js.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/aes-js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/alphawallet-2CF4CAHK.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/alphawallet-2CF4CAHK.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/atoken-KFEP6OUL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/atoken-KFEP6OUL.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/bech32.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/bech32.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/binance-7TSP3M6D.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/binance-7TSP3M6D.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/bitkeep-5OZMCNYK.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/bitkeep-5OZMCNYK.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/bitpie-3IGF77ZV.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/bitpie-3IGF77ZV.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/bitski-QGNWUYX3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/bitski-QGNWUYX3.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/blockwallet-XPNUVWFU.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/blockwallet-XPNUVWFU.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/bn__js.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/bn__js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/brave-FCVURFF3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/brave-FCVURFF3.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-BU7L7KZO.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-BU7L7KZO.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-CBQNSZ4A.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-CBQNSZ4A.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-DOGLEXVZ.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-DOGLEXVZ.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-GWAR3SMS.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-GWAR3SMS.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-IJ7IQSKN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-IJ7IQSKN.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-IN2R7X62.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-IN2R7X62.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-JCO65AIX.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-JCO65AIX.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-JUYB7PGA.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-JUYB7PGA.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-LUAEQXGQ.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-LUAEQXGQ.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-MYILNTZI.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-MYILNTZI.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-NEUIYBRM.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-NEUIYBRM.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-O66LVNQA.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-O66LVNQA.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-RRF6SA7V.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-RRF6SA7V.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-S6BB4OWC.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-S6BB4OWC.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-SF6IFTWK.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-SF6IFTWK.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-WCHNXXWT.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-WCHNXXWT.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-YXRZRKSB.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-YXRZRKSB.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-ZL7CHZ5F.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-ZL7CHZ5F.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-ZQRKHWJX.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-ZQRKHWJX.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-ZZSVE7H3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/chunk-ZZSVE7H3.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/coinbase-PJFKS3W4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/coinbase-PJFKS3W4.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/cookie-es.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/cookie-es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/cookie-es.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/cookie-es.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/core-WVLI5OIF.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/core-WVLI5OIF.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/crypto.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/crypto.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/detected-QFE2LJAB.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/detected-QFE2LJAB.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/enkrypt-LMIQN24Z.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/enkrypt-LMIQN24Z.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/esm-QTJXCUCQ.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/esm-QTJXCUCQ.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/exodus-2OMPNM3N.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/exodus-2OMPNM3N.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/frame-USSXM5OB.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/frame-USSXM5OB.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/frontier-4HRHY5EU.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/frontier-4HRHY5EU.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/gamestop-Q5X3YNRX.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/gamestop-Q5X3YNRX.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/gsap.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/gsap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/gsap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/gsap.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/hash__js.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/hash__js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/huobiwallet-FMGYBXFP.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/huobiwallet-FMGYBXFP.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/hyperpay-SQNOSYM5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/hyperpay-SQNOSYM5.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/imtoken-5F6W3NW4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/imtoken-5F6W3NW4.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/is-https.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/is-https.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/is-https.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/is-https.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/js-cookie.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/js-cookie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/js-cookie.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/js-cookie.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/js-sha3.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/js-sha3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/lil-gui.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/lil-gui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/lil-gui.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/lil-gui.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/liquality-KHSAKXLJ.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/liquality-KHSAKXLJ.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/mathwallet-YCDTNCC4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/mathwallet-YCDTNCC4.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/meetone-HVK4L6B6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/meetone-HVK4L6B6.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/metamask-IHTSTNO3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/metamask-IHTSTNO3.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/mykey-BZZEKJB3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/mykey-BZZEKJB3.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/oneInch-4R6AANZJ.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/oneInch-4R6AANZJ.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/opera-OOIHNG5S.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/opera-OOIHNG5S.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/ownbit-HIKDQBPS.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/ownbit-HIKDQBPS.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/phantom-D7VVBOM6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/phantom-D7VVBOM6.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/pinia.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/pinia.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/pinia.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/pinia.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/rabby-ERBG2AAG.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/rabby-ERBG2AAG.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/rainbow-BG7GZUEN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/rainbow-BG7GZUEN.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/scrypt-js.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/scrypt-js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/sequence-VI77UGZV.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/sequence-VI77UGZV.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/status-2ZDKLZMW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/status-2ZDKLZMW.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/tallywallet-7INM5QIC.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/tallywallet-7INM5QIC.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/three.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/three.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_controls_OrbitControls.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_controls_OrbitControls.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_controls_OrbitControls.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_controls_OrbitControls.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_libs_stats__module__js.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_libs_stats__module__js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_libs_stats__module__js.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_libs_stats__module__js.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_loaders_GLTFLoader__js.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_loaders_GLTFLoader__js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_loaders_GLTFLoader__js.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_loaders_GLTFLoader__js.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_postprocessing_EffectComposer.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_postprocessing_EffectComposer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_postprocessing_EffectComposer.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_postprocessing_EffectComposer.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_postprocessing_RenderPass.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_postprocessing_RenderPass.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_postprocessing_ShaderPass.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_postprocessing_ShaderPass.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_shaders_CopyShader.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_shaders_CopyShader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_shaders_FXAAShader.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_shaders_FXAAShader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_shaders_FXAAShader.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/three_examples_jsm_shaders_FXAAShader.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/tokenary-R44WGZK3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/tokenary-R44WGZK3.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/tokenpocket-MO2VXH23.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/tokenpocket-MO2VXH23.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/tp-JFPS4YUE.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/tp-JFPS4YUE.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/troisjs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/troisjs.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/trust-4AQ7VYEY.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/trust-4AQ7VYEY.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/ufo.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/ufo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/ufo.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/ufo.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/vue-i18n-routing.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/vue-i18n-routing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/vue-i18n-routing.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/vue-i18n-routing.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/vue-i18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/vue-i18n.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/vue-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/vue-router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing/cache/deps/vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/xdefi-VOVQM75O.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/xdefi-VOVQM75O.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/zeal-A6DDDDDV.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/zeal-A6DDDDDV.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/zerion-GFTZUB7E.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps/zerion-GFTZUB7E.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/components/checkout/WithPaypal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/landing/components/checkout/WithPaypal.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/components/home/Presale.vue" beforeDir="false" afterPath="$PROJECT_DIR$/landing/components/home/Presale.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landing/components/payment/Simple.vue" beforeDir="false" afterPath="$PROJECT_DIR$/landing/components/payment/Simple.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/i18n/en-US.json" beforeDir="false" afterPath="$PROJECT_DIR$/landing/i18n/en-US.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/i18n/es-MX.json" beforeDir="false" afterPath="$PROJECT_DIR$/landing/i18n/es-ES.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/i18n/fr-CA.json" beforeDir="false" afterPath="$PROJECT_DIR$/landing/i18n/fr-FR.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landing/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/landing/nuxt.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landing/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/landing/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landing/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/landing/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landing/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/landing/pages/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/plugins/paypal.client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/landing/plugins/paypal.client.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/plugins/pinia-plugin-persist.client.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,22 +235,41 @@
     "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
-    "last_opened_file_path": "/Users/nicolascloutier/IdeaProjects/akx-landingpage/landing/composables",
+    "last_opened_file_path": "/Users/nicolascloutier/IdeaProjects/akx-landingpage/sql",
     "nodejs_package_manager_path": "npm",
     "ts.external.directory.path": "/Users/nicolascloutier/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/222.3739.54/IntelliJ IDEA.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ],
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/": [
+      "PostgreSQL"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sql" />
+      <recent name="$PROJECT_DIR$/landing/server/api/prices" />
+      <recent name="$PROJECT_DIR$/landing/plugins" />
       <recent name="$PROJECT_DIR$/landing/composables" />
       <recent name="$PROJECT_DIR$/landing/public/models/quantum_guardian" />
-      <recent name="$PROJECT_DIR$/landing/class/three/World" />
-      <recent name="$PROJECT_DIR$/landing/public/models" />
-      <recent name="$PROJECT_DIR$/landing/public" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/landing" />
+    </key>
+  </component>
+  <component name="SQLScriptSettings">
+    <option name="matrix">
+      <map>
+        <entry key="POSTGRES.CreateComplete" value="CreateOrReplace=1, CreateIfNotExists=1" />
+      </map>
+    </option>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -82,7 +282,7 @@
       <workItem from="1674152620316" duration="3651000" />
       <workItem from="1674158032247" duration="14683000" />
       <workItem from="1674217233713" duration="33055000" />
-      <workItem from="1674575294863" duration="42522000" />
+      <workItem from="1674575294863" duration="76118000" />
     </task>
     <servers />
   </component>

@@ -2,19 +2,16 @@ import {
   createRouter,
   useRoute,
   useRouter
-} from "./chunk-IN2R7X62.js";
-import {
-  vue_demi_exports
-} from "./chunk-ZL7CHZ5F.js";
+} from "./chunk-UZKDW2NT.js";
 import {
   useI18n
-} from "./chunk-GWAR3SMS.js";
-import "./chunk-JUYB7PGA.js";
-import "./chunk-BU7L7KZO.js";
-import "./chunk-WCHNXXWT.js";
+} from "./chunk-NPONR2JA.js";
+import "./chunk-QOCXBNE3.js";
+import "./chunk-PE6PHGXM.js";
+import "./chunk-VBKL4DHB.js";
 import {
   __publicField
-} from "./chunk-IJ7IQSKN.js";
+} from "./chunk-LFBQMW2U.js";
 
 // node_modules/@nuxtjs/i18n/node_modules/@intlify/vue-router-bridge/lib/index.mjs
 var isVueRouter4 = true;
@@ -26,6 +23,7 @@ __publicField(VueRouterLegacy, "version", "");
 var lib_default = VueRouterLegacy;
 
 // node_modules/@nuxtjs/i18n/node_modules/vue-i18n-routing/dist/vue-i18n-routing.mjs
+import { isRef, isVue2, effectScope, computed, isVue3, ref, watch, unref, watchEffect, onUnmounted } from "vue-demi";
 var STRATEGIES = {
   PREFIX: "prefix",
   PREFIX_EXCEPT_DEFAULT: "prefix_except_default",
@@ -101,13 +99,13 @@ function isI18nInstance(i18n) {
   return i18n != null && "global" in i18n && "mode" in i18n;
 }
 function isComposer(target) {
-  return target != null && !("__composer" in target) && (0, vue_demi_exports.isRef)(target.locale);
+  return target != null && !("__composer" in target) && isRef(target.locale);
 }
 function isVueI18n(target) {
   return target != null && "__composer" in target;
 }
 function isExportedGlobalComposer(target) {
-  return target != null && !("__composer" in target) && !(0, vue_demi_exports.isRef)(target.locale);
+  return target != null && !("__composer" in target) && !isRef(target.locale);
 }
 function isLegacyVueI18n(target) {
   return target != null && ("__VUE_I18N_BRIDGE__" in target || "_sync" in target);
@@ -117,20 +115,20 @@ function getComposer(i18n) {
 }
 function getLocale(i18n) {
   const target = isI18nInstance(i18n) ? i18n.global : i18n;
-  return isComposer(target) ? vue_demi_exports.isVue2 && isLegacyVueI18n(i18n) ? i18n.locale : target.locale.value : isExportedGlobalComposer(target) || isVueI18n(target) || isLegacyVueI18n(target) ? target.locale : target.locale;
+  return isComposer(target) ? isVue2 && isLegacyVueI18n(i18n) ? i18n.locale : target.locale.value : isExportedGlobalComposer(target) || isVueI18n(target) || isLegacyVueI18n(target) ? target.locale : target.locale;
 }
 function getLocales(i18n) {
   const target = isI18nInstance(i18n) ? i18n.global : i18n;
-  return isComposer(target) ? vue_demi_exports.isVue2 && isLegacyVueI18n(i18n) ? i18n.locales : target.locales.value : isExportedGlobalComposer(target) || isVueI18n(target) || isLegacyVueI18n(target) ? target.locales : target.locales;
+  return isComposer(target) ? isVue2 && isLegacyVueI18n(i18n) ? i18n.locales : target.locales.value : isExportedGlobalComposer(target) || isVueI18n(target) || isLegacyVueI18n(target) ? target.locales : target.locales;
 }
 function getLocaleCodes(i18n) {
   const target = isI18nInstance(i18n) ? i18n.global : i18n;
-  return isComposer(target) ? vue_demi_exports.isVue2 && isLegacyVueI18n(i18n) ? i18n.localeCodes : target.localeCodes.value : isExportedGlobalComposer(target) || isVueI18n(target) || isLegacyVueI18n(target) ? target.localeCodes : target.localeCodes;
+  return isComposer(target) ? isVue2 && isLegacyVueI18n(i18n) ? i18n.localeCodes : target.localeCodes.value : isExportedGlobalComposer(target) || isVueI18n(target) || isLegacyVueI18n(target) ? target.localeCodes : target.localeCodes;
 }
 function setLocale(i18n, locale) {
   const target = isI18nInstance(i18n) ? i18n.global : i18n;
   if (isComposer(target)) {
-    if (vue_demi_exports.isVue2 && isLegacyVueI18n(i18n)) {
+    if (isVue2 && isLegacyVueI18n(i18n)) {
       i18n.locale = locale;
     } else {
       target.locale.value = locale;
@@ -145,7 +143,7 @@ function adjustRoutePathForTrailingSlash(pagePath, trailingSlash, isChildWithRel
   return pagePath.replace(/\/+$/, "") + (trailingSlash ? "/" : "") || (isChildWithRelativePath ? "" : "/");
 }
 function toRawRoute(maybeRoute) {
-  return isVueRouter4 ? (0, vue_demi_exports.isRef)(maybeRoute) ? maybeRoute.value : maybeRoute : (0, vue_demi_exports.isRef)(maybeRoute) ? maybeRoute.value : maybeRoute;
+  return isVueRouter4 ? isRef(maybeRoute) ? maybeRoute.value : maybeRoute : isRef(maybeRoute) ? maybeRoute.value : maybeRoute;
 }
 function getRouteName(routeName) {
   return isString(routeName) ? routeName : isSymbol(routeName) ? routeName.toString() : "(null)";
@@ -348,7 +346,7 @@ function extendI18n(i18n, {
   hooks = {},
   context = {}
 } = {}) {
-  const scope = (0, vue_demi_exports.effectScope)();
+  const scope = effectScope();
   const orgInstall = i18n.install;
   i18n.install = (vue, ...options) => {
     const pluginOptions = isPluginOptions(options[0]) ? assign({}, options[0]) : { inject: true };
@@ -358,9 +356,9 @@ function extendI18n(i18n, {
     const orgComposerExtend = pluginOptions.__composerExtend;
     pluginOptions.__composerExtend = (c) => {
       const g = getComposer(i18n);
-      c.locales = (0, vue_demi_exports.computed)(() => g.locales.value);
-      c.localeCodes = (0, vue_demi_exports.computed)(() => g.localeCodes.value);
-      c.baseUrl = (0, vue_demi_exports.computed)(() => g.baseUrl.value);
+      c.locales = computed(() => g.locales.value);
+      c.localeCodes = computed(() => g.localeCodes.value);
+      c.baseUrl = computed(() => g.baseUrl.value);
       if (isFunction(orgComposerExtend)) {
         Reflect.apply(orgComposerExtend, pluginOptions, [c]);
       }
@@ -382,7 +380,7 @@ function extendI18n(i18n, {
       extendVueI18n(i18n.global, hooks.onExtendVueI18n);
     }
     const app = vue;
-    const exported = i18n.mode === "composition" ? vue_demi_exports.isVue3 ? app.config.globalProperties.$i18n : i18n : vue_demi_exports.isVue2 ? i18n : null;
+    const exported = i18n.mode === "composition" ? isVue3 ? app.config.globalProperties.$i18n : i18n : isVue2 ? i18n : null;
     if (exported) {
       extendExportedGlobal(exported, composer, hooks.onExtendExportedGlobal);
     }
@@ -411,14 +409,14 @@ function extendI18n(i18n, {
 }
 function extendComposer(composer, options) {
   const { locales, localeCodes, baseUrl, context } = options;
-  const _locales = (0, vue_demi_exports.ref)(locales);
-  const _localeCodes = (0, vue_demi_exports.ref)(localeCodes);
-  const _baseUrl = (0, vue_demi_exports.ref)("");
-  composer.locales = (0, vue_demi_exports.computed)(() => _locales.value);
-  composer.localeCodes = (0, vue_demi_exports.computed)(() => _localeCodes.value);
-  composer.baseUrl = (0, vue_demi_exports.computed)(() => _baseUrl.value);
+  const _locales = ref(locales);
+  const _localeCodes = ref(localeCodes);
+  const _baseUrl = ref("");
+  composer.locales = computed(() => _locales.value);
+  composer.localeCodes = computed(() => _localeCodes.value);
+  composer.baseUrl = computed(() => _baseUrl.value);
   if (inBrowser) {
-    (0, vue_demi_exports.watch)(
+    watch(
       composer.locale,
       () => {
         _baseUrl.value = resolveBaseUrl(baseUrl, context);
@@ -560,9 +558,9 @@ function createRouter2(i18n, options = {}) {
   return router;
 }
 function createVueRouter(options, version) {
-  if (vue_demi_exports.isVue3 && version === 4) {
+  if (isVue3 && version === 4) {
     return createRouter(options);
-  } else if (vue_demi_exports.isVue2 && version === 3) {
+  } else if (isVue2 && version === 3) {
     return new lib_default(options);
   } else {
     throw new Error("TODO:");
@@ -649,7 +647,7 @@ function split(str, index) {
   return result;
 }
 function resolve(router, route, strategy, locale) {
-  if (vue_demi_exports.isVue3 && strategy === "prefix") {
+  if (isVue3 && strategy === "prefix") {
     if (isArray(route.matched) && route.matched.length > 0) {
       return route.matched[0];
     }
@@ -677,7 +675,7 @@ var DefaultPrefixable = prefixable;
 function getRouteBaseName(givenRoute) {
   const router = this.router;
   const { routesNameSeparator } = getI18nRoutingOptions(router, this);
-  const route = givenRoute != null ? (0, vue_demi_exports.isRef)(givenRoute) ? (0, vue_demi_exports.unref)(givenRoute) : givenRoute : this.route;
+  const route = givenRoute != null ? isRef(givenRoute) ? unref(givenRoute) : givenRoute : this.route;
   if (route == null || !route.name) {
     return;
   }
@@ -686,15 +684,15 @@ function getRouteBaseName(givenRoute) {
 }
 function localePath(route, locale) {
   const localizedRoute = resolveRoute.call(this, route, locale);
-  return localizedRoute == null ? "" : vue_demi_exports.isVue3 ? localizedRoute.redirectedFrom || localizedRoute.fullPath : localizedRoute.route.redirectedFrom || localizedRoute.route.fullPath;
+  return localizedRoute == null ? "" : isVue3 ? localizedRoute.redirectedFrom || localizedRoute.fullPath : localizedRoute.route.redirectedFrom || localizedRoute.route.fullPath;
 }
 function localeRoute(route, locale) {
   const resolved = resolveRoute.call(this, route, locale);
-  return resolved == null ? void 0 : vue_demi_exports.isVue3 ? resolved : resolved.route;
+  return resolved == null ? void 0 : isVue3 ? resolved : resolved.route;
 }
 function localeLocation(route, locale) {
   const resolved = resolveRoute.call(this, route, locale);
-  return resolved == null ? void 0 : vue_demi_exports.isVue3 ? resolved : resolved.location;
+  return resolved == null ? void 0 : isVue3 ? resolved : resolved.location;
 }
 function resolveRoute(route, locale) {
   const router = this.router;
@@ -716,7 +714,7 @@ function resolveRoute(route, locale) {
       _resolvedRoute = resolve(router, localizedRoute, strategy, _locale);
     } catch {
     }
-    const resolvedRoute = vue_demi_exports.isVue3 ? _resolvedRoute : _resolvedRoute.route;
+    const resolvedRoute = isVue3 ? _resolvedRoute : _resolvedRoute.route;
     const resolvedRouteName = getRouteBaseName.call(this, resolvedRoute);
     if (isString(resolvedRouteName)) {
       localizedRoute = {
@@ -730,7 +728,7 @@ function resolveRoute(route, locale) {
         query: resolvedRoute.query,
         hash: resolvedRoute.hash
       };
-      if (vue_demi_exports.isVue3) {
+      if (isVue3) {
         localizedRoute.state = resolvedRoute.state;
       }
     } else {
@@ -749,7 +747,7 @@ function resolveRoute(route, locale) {
       routesNameSeparator,
       defaultLocaleRouteNameSuffix
     });
-    if (vue_demi_exports.isVue2) {
+    if (isVue2) {
       const { params } = localizedRoute;
       if (params && params["0"] === void 0 && params.pathMatch) {
         params["0"] = params.pathMatch;
@@ -758,14 +756,14 @@ function resolveRoute(route, locale) {
   }
   try {
     const resolvedRoute = router.resolve(localizedRoute);
-    if (vue_demi_exports.isVue3 ? resolvedRoute.name : resolvedRoute.route.name) {
+    if (isVue3 ? resolvedRoute.name : resolvedRoute.route.name) {
       return resolvedRoute;
     }
     return router.resolve(route);
   } catch (e) {
-    if (vue_demi_exports.isVue3 && e.type === 1) {
+    if (isVue3 && e.type === 1) {
       return null;
-    } else if (vue_demi_exports.isVue2) {
+    } else if (isVue2) {
       return null;
     }
   }
@@ -776,8 +774,8 @@ function getLocalizableMetaFromDynamicParams(route, key) {
   if (key === DEFAULT_DYNAMIC_PARAMS_KEY) {
     return metaDefault;
   }
-  const meta = vue_demi_exports.isVue3 ? route.meta : (0, vue_demi_exports.isRef)(route) ? route.value.meta || metaDefault : route.meta || metaDefault;
-  if ((0, vue_demi_exports.isRef)(meta)) {
+  const meta = isVue3 ? route.meta : isRef(route) ? route.value.meta || metaDefault : route.meta || metaDefault;
+  if (isRef(meta)) {
     return meta.value[key] || metaDefault;
   } else {
     return meta[key] || metaDefault;
@@ -790,7 +788,7 @@ function switchLocalePath(locale) {
     return "";
   }
   const { switchLocalePathIntercepter, dynamicRouteParamsKey } = getI18nRoutingOptions(this.router, this);
-  const { params, ...routeCopy } = vue_demi_exports.isVue3 ? route : (0, vue_demi_exports.isRef)(route) ? route.value : route;
+  const { params, ...routeCopy } = isVue3 ? route : isRef(route) ? route.value : route;
   const langSwitchParams = getLocalizableMetaFromDynamicParams(route, dynamicRouteParamsKey)[locale] || {};
   const _baseRoute = {
     name,
@@ -799,7 +797,7 @@ function switchLocalePath(locale) {
       ...langSwitchParams
     }
   };
-  if (vue_demi_exports.isVue2) {
+  if (isVue2) {
     _baseRoute.params[0] = params.pathMatch;
   }
   const baseRoute = assign({}, routeCopy, _baseRoute);
@@ -833,8 +831,8 @@ function localeHead({ addDirAttribute = false, addSeoAttributes = false, identif
     if (currentLocaleIso) {
       metaObject.htmlAttrs.lang = currentLocaleIso;
     }
-    addHreflangLinks.call(this, locales, (0, vue_demi_exports.unref)(i18n.baseUrl), metaObject.link, identifierAttribute);
-    addCanonicalLinks.call(this, (0, vue_demi_exports.unref)(i18n.baseUrl), metaObject.link, identifierAttribute, addSeoAttributes);
+    addHreflangLinks.call(this, locales, unref(i18n.baseUrl), metaObject.link, identifierAttribute);
+    addCanonicalLinks.call(this, unref(i18n.baseUrl), metaObject.link, identifierAttribute, addSeoAttributes);
     addCurrentOgLocale(currentLocale, currentLocaleIso, metaObject.meta, identifierAttribute);
     addAlternateOgLocales(locales, currentLocaleIso, metaObject.meta, identifierAttribute);
   }
@@ -1084,7 +1082,7 @@ function useLocaleHead({
   i18n = useI18n()
 } = {}) {
   const _router = router;
-  const metaObject = (0, vue_demi_exports.ref)({
+  const metaObject = ref({
     htmlAttrs: {},
     link: [],
     meta: []
@@ -1110,12 +1108,12 @@ function useLocaleHead({
     );
   }
   if (inBrowser) {
-    if (vue_demi_exports.isVue3) {
-      const stop = (0, vue_demi_exports.watchEffect)(() => {
+    if (isVue3) {
+      const stop = watchEffect(() => {
         cleanMeta();
         updateMeta(toRawRoute(_router.currentRoute));
       });
-      (0, vue_demi_exports.onUnmounted)(() => stop());
+      onUnmounted(() => stop());
     } else {
       const handler = _router.afterEach(
         (to, from) => {
@@ -1123,7 +1121,7 @@ function useLocaleHead({
           updateMeta(to);
         }
       );
-      (0, vue_demi_exports.onUnmounted)(() => handler());
+      onUnmounted(() => handler());
       updateMeta(route);
     }
   } else {
@@ -1180,9 +1178,13 @@ export {
   useRouteBaseName,
   useSwitchLocalePath
 };
-/*!
-  * shared v9.3.0-beta.10
-  * (c) 2022 kazuya kawaguchi
-  * Released under the MIT License.
-  */
+/*! Bundled license information:
+
+vue-i18n-routing/dist/vue-i18n-routing.mjs:
+  (*!
+    * shared v9.3.0-beta.10
+    * (c) 2022 kazuya kawaguchi
+    * Released under the MIT License.
+    *)
+*/
 //# sourceMappingURL=vue-i18n-routing.js.map

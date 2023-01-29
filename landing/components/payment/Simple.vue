@@ -1,8 +1,10 @@
 <script lang="ts" setup>
 
 import {useNuxtApp, useState} from "#app";
-import {onMounted, watch} from "#imports";
+import {onMounted, ref, useFetch, useSupabaseClient, watch} from "#imports";
 import {useWallet} from "#imports";
+import {useOrderStore} from "~/stores/order";
+import axios from "axios";
 
 const amountIn = useState('amount_in', () => 1);
 const amountOut= useState('amountOut', () => 0);
@@ -12,6 +14,8 @@ const price = useState('matics_price', () => 0.01);
 const selectedChip = useState('sel_chip', () => "");
 const balance = useState('crypto_bal', () => "");
 const walAddress = useState('wallet_tosend', () => undefined);
+const showOrderRight = useState('show_order_bar', () => true);
+const order = useOrderStore();
 
 
 function calcOut(price:number) {
@@ -55,25 +59,77 @@ const doConnect = async () => {
 
 }
 
+function showConfirmBar() {
+  showOrderRight.value = true;
+  useNuxtApp().$bus.$emit('show_bar', true);
+}
+
+const supabase = useSupabaseClient();
+const loading = ref(false);
+
+
 
 onMounted(async () => {
 
-  // @ts-ignore
- wallets.value = onboard.state.get().wallets;
-  connected.value = wallets.value.length > 0;
 
+    // @ts-ignore
+    wallets.value = onboard.state.get().wallets;
+    connected.value = wallets.value.length > 0;
+// @ts-ignore
+    const uuid: any = await supabase.from('orders').insert({}).select();
 
-
-  calcOut(price.value);
-  selectedChip.value = "usd";
-
-
-
-  watch(amountIn, (val, old) => {
-    if(val !== old) {
-      calcOut(price.value);
+    if (!order.orderId) {
+      order.$patch({order_uuid: uuid.data[0].id})
     }
-  });
+
+
+    selectedChip.value = "usd";
+    const {data} = await axios.get("/api/prices/akxfiats");
+    price.value = parseFloat(data.usd);
+    calcOut(price.value);
+
+    watch(amountIn, (val, old) => {
+      if (val !== old) {
+        calcOut(price.value);
+      }
+    });
+
+    watch(selectedChip, (val) => {
+
+      order.setCurrency(val);
+      if (val == "usd" || val == "cad" || val == "eur") {
+        axios.get("/api/prices/akxfiats").then(({data}) => {
+          if (val == "usd") price.value = parseFloat(data.usd);
+          else if (val == "cad") price.value = parseFloat(data.cad);
+          else if (val == "eur") price.value = parseFloat(data.eur);
+
+          order.setPrice(price.value);
+          calcOut(price.value);
+        })
+
+      } else if (val == "eth") {
+        axios.get("/api/prices/akxeth?amount=1").then(({data}) => {
+          price.value = parseFloat(data);
+
+          order.setPrice(price.value);
+          calcOut(price.value);
+        });
+
+      } else {
+        price.value = 0.01;
+
+        order.setPrice(price.value);
+        calcOut(price.value);
+      }
+
+
+
+    });
+
+
+
+
+
 
 
 
@@ -85,6 +141,7 @@ onMounted(async () => {
 
 <template>
 
+
      <v-form>
 
         <v-row>
@@ -95,12 +152,9 @@ onMounted(async () => {
 
                  <v-chip active-class="active_chip" selected-class="active_chip" link value="usd" >USD</v-chip>
                   <v-chip active-class="active_chip" selected-class="active_chip" link value="cad">CAD</v-chip>
-                  <v-chip active-class="active_chip" selected-class="active_chip" link value="euro">EUR</v-chip>
-                 <div v-if="connected"> <v-chip active-class="active_chip" selected-class="active_chip" link value="eth" :disabled="!isEth">ETH</v-chip></div>
-                <div v-if="connected"> <v-chip active-class="active_chip" selected-class="active_chip" link value="matic" :disabled="!isPolygon">MATIC</v-chip> </div>
-                <div v-if="!connected"> <v-chip active-class="active_chip" selected-class="active_chip" link value="eth" @click="doConnect">ETH</v-chip></div>
-                <div v-if="!connected"> <v-chip active-class="active_chip" selected-class="active_chip" link value="matic" @click="doConnect">MATIC</v-chip> </div>
-
+                  <v-chip active-class="active_chip" selected-class="active_chip" link value="eur">EUR</v-chip>
+            <v-chip active-class="active_chip" selected-class="active_chip" link value="eth" >ETH</v-chip>
+              <v-chip active-class="active_chip" selected-class="active_chip" link value="matic" >MATIC</v-chip>
               </v-chip-group>
 
           </v-col>
@@ -125,7 +179,7 @@ onMounted(async () => {
             </v-col>
 
             <v-col cols="12">
-              <v-btn variant="elevated" size="x-large" color="#00DC82FF" style="color:black" width="100%">CONFIRM YOUR ORDER</v-btn>
+              <v-btn variant="elevated" size="x-large" color="#00DC82FF" style="color:black" width="100%" @click="showConfirmBar">CONFIRM YOUR ORDER</v-btn>
             </v-col>
           </v-row>
 
