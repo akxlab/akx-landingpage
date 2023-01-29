@@ -2,10 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eee07431-0dc3-4e16-ac64-d34aa0e286a2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/landing/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/landing/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/landing/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps_temp/aes-js.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps_temp/aes-js.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps_temp/bech32.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps_temp/bech32.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps_temp/bn__js.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps_temp/bn__js.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps_temp/chunk-OL3AADLO.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps_temp/chunk-OL3AADLO.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps_temp/chunk-VBKL4DHB.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps_temp/chunk-VBKL4DHB.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps_temp/cross-fetch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps_temp/cross-fetch.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps_temp/crypto.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps_temp/crypto.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps_temp/hash__js.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps_temp/hash__js.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps_temp/js-sha3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps_temp/js-sha3.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps_temp/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps_temp/scrypt-js.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps_temp/scrypt-js.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps_temp/vue-router.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps_temp/vue-router.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps_temp/vue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps_temp/vue.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps_temp/websocket.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing/cache/deps_temp/websocket.js.map" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +104,7 @@
       <workItem from="1674152620316" duration="3651000" />
       <workItem from="1674158032247" duration="14683000" />
       <workItem from="1674217233713" duration="33055000" />
-      <workItem from="1674575294863" duration="76563000" />
+      <workItem from="1674575294863" duration="76805000" />
     </task>
     <servers />
   </component>
