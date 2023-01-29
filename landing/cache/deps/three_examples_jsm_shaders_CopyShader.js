@@ -1,8 +1,0 @@
-import {
-  CopyShader
-} from "./chunk-VFQFXCRH.js";
-import "./chunk-LFBQMW2U.js";
-export {
-  CopyShader
-};
-//# sourceMappingURL=three_examples_jsm_shaders_CopyShader.js.map

@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["node-modules-polyfills:crypto"],
-  "sourcesContent": ["export default {};\n"],
-  "mappings": ";;;;;;AAAA;AAAA;AAAA;AAAA;AAAA,IAAO;AAAP;AAAA;AAAA,IAAO,iBAAQ,CAAC;AAAA;AAAA;",
-  "names": []
-}

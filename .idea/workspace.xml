@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eee07431-0dc3-4e16-ac64-d34aa0e286a2" name="Changes" comment="" />
+    <list default="true" id="eee07431-0dc3-4e16-ac64-d34aa0e286a2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/landing/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/landing/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +80,7 @@
       <workItem from="1674152620316" duration="3651000" />
       <workItem from="1674158032247" duration="14683000" />
       <workItem from="1674217233713" duration="33055000" />
-      <workItem from="1674575294863" duration="76425000" />
+      <workItem from="1674575294863" duration="76563000" />
     </task>
     <servers />
   </component>
