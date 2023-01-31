@@ -1,5 +1,6 @@
 import {defineStore} from "pinia";
 import {v4} from "uuid"
+import axios from "axios";
 
 export const useOrderStore = defineStore('order_store', {
 
@@ -39,6 +40,12 @@ export const useOrderStore = defineStore('order_store', {
         },
         orderId: (state) => {
             return state.order_uuid;
+        },
+        getPrice: (state) => {
+            return state.item_price;
+        },
+        getQty: (state) => {
+            return state.item_qty;
         }
     },
     actions: {
@@ -67,13 +74,30 @@ export const useOrderStore = defineStore('order_store', {
         setWallet(payload:any) {
             this.send_to_wallet = payload;
         },
-        setCurrency(payload:any) {
-            if(payload == "ETH" || payload == "MATIC") {
+        async setCurrency(val:any) {
+            let price;
+            if (val == "ETH" || val == "MATIC") {
                 this.use_paypal = false;
             } else {
                 this.use_paypal = true;
             }
-            this.currency = payload;
+            if (val == "usd" || val == "cad" || val == "eur") {
+                const res = await $fetch("/api/prices/akxfiats")
+
+                    if (val == "usd") price = parseFloat(res.usd);
+                    else if (val == "cad") price = parseFloat(res.cad);
+                    else if (val == "eur") price = parseFloat(res.eur);
+                    this.setPrice(price);
+
+            } else if (val == "eth") {
+                const res = await $fetch("/api/prices/akxeth")
+                    price = parseFloat(res);
+                    this.setPrice(price);
+
+            } else {
+                this.setPrice(0.01);
+            }
+            this.currency = val;
         },
         setPrice(payload:any) {
             this.item_price = payload;

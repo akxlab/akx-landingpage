@@ -27,7 +27,6 @@ const { t } = useI18n()
            <div ref="canvasHolder" class="canvasHolder" style="max-width:100%;  min-height:400px;min-width:400px;width:100%;height:100%;">
 
 
-             <ThreeCanvas />
 
       </div>
 
